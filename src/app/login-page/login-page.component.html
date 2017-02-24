@@ -1,0 +1,51 @@
+<!-- CONTENT -->
+	<!-- background -->
+	<div class="page-bk login-bk">
+	</div>
+
+	<main class="container">
+		<div class="log-container">
+			<a [routerLink]="['/']">
+				<div class="logo">
+				</div>
+			</a>
+			
+			<div class="log-content">
+				<div class="signIn">
+					<h2 class="text-center">
+						Bienvenido a Jiuvii!
+					</h2>
+
+					<form (submit)="loginWithEmail($event, email.value, password.value)">
+						<input #email id="email" name="email" value="" placeholder="Email" type="email" class="input-lg">
+						<input #password id="password" name="password" value="" placeholder="Contraseña (min 6 caracteres)" type="password" class="input-lg">
+
+                        <button class="btn btn-block btn-wide btn-primary" type="submit">Iniciar sesión</button>
+						
+						<hr/>
+
+						<a (click)="loginWithFacebook()" class="btn btn-block btn-facebook">
+							<i class="fa fa-facebook-square fa-lg"></i>
+							Ingresa con Facebook
+						</a>
+						
+						<a (click)="loginWithGoogle()" class="btn btn-block btn-google">
+							<i class="fa fa-google-plus-square fa-lg"></i>
+							Ingresa con Google
+						</a>
+					</form>
+					<div class="text-center margin">
+						<h5>
+							¿Olvidaste la contraseña?
+							<a [routerLink]="['/reset-password']" class="forgot-password">Restablecer contraseña</a>
+						</h5>
+						<h5>		
+							¿No tenes cuenta aun?
+							<a [routerLink]="['/register']">Registrate Gratis</a>
+						</h5>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</main>

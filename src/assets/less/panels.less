@@ -1,0 +1,122 @@
+//
+// Panels
+// --------------------------------------------------
+
+
+// Cart Panel
+.cart {
+    .cart-stores-container {
+        max-height: 85vh;
+        overflow: auto;
+    }
+
+    .panel-group {
+        .panel {
+            margin-bottom: 0;
+            border-radius: @panel-border-radius;
+            background-color: @panel-bg;
+            border: none;
+
+            + .panel {
+                margin-top: @size-20;
+            }            
+        }
+
+        .panel-heading {
+            background-color: @primary;
+            border-bottom: 0;
+            border-top-left-radius: @panel-border-radius;
+            border-top-right-radius: @panel-border-radius;
+            height: 50px;
+
+            .panel-title {
+                margin: @size-6 @size-10;
+                max-width: @half-size;
+            }
+
+            .well {
+                background-color: @white;
+                border-radius: @size-6;
+                box-shadow: none;
+                color: @primary;
+                margin-bottom: 0;
+                min-height: @size-20;
+                padding: (@size-6 / 2) @size-10;
+            }
+
+            &.delivery-fees {
+                background: darken(@primary, 10%);
+                font-size: @font-size-h6;
+                height: @size-40 !important;
+
+                .delivery-available {
+                    a,
+                    a:hover,
+                    a:focus {
+                        color: @white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .delivery-options {
+            background: darken(@primary, 10%);
+            font-size: @font-size-small;
+        
+            table {
+                color: @white;
+                margin-bottom: 0;
+            }
+        } 
+        
+        table.cart-items {    
+            .cart-item {
+                td.item-name {
+                    max-width: 200px;
+                    overflow: hidden;
+                    text-align: left;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    vertical-align: middle;
+
+                    textarea {
+                        margin:  0;
+                        width: @full-size;
+                    }
+                }
+            }
+        }
+    }
+
+    .cart-total {
+        background: white none repeat scroll 0 0;
+        bottom: 0;
+        position: fixed;
+        padding: @size-10;
+        width: 400px;
+
+        .well.checkout-well {
+            position: absolute;
+            right: @size-20;
+            color: @primary;
+            padding: @size-4;
+            font-size: @font-size-small;
+            margin: 0;
+        }
+    }
+}
+
+// Contextual variations
+.panel-primary {
+  .panel-variant(@panel-primary-border; @panel-primary-text; @panel-primary-heading-bg; @panel-primary-border);
+}
+
+// Store and User Dashboards
+.dashboard {
+    .panel-detail {
+        .panel-resume-box {
+            margin-bottom: @size-20;
+        }
+    }
+}

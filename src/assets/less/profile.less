@@ -1,0 +1,543 @@
+//
+// Store and Profile
+// --------------------------------------------------
+
+.store-header {
+    margin-top: @navbar-jiuvii-height;
+    position: relative;
+    width: @full-size;
+    height: @size-store-banner;
+    text-align: center;
+
+    .banner-header-container {
+        position: relative;
+        width: @full-size;
+        text-shadow: @default-shadow;
+
+        .store-header-info {
+            top: @size-10;
+            z-index: 1;
+            position: absolute;
+            width: @full-size;
+
+            .store-title {
+                font-size: @font-size-h2;
+                color: @white;
+            }
+
+            .store-type {
+                font-size: @font-size-medium;
+
+                li a {
+                    color: @white;
+                }
+            }
+
+            .store-location {
+                color: @white;
+                margin-top: @size-4;
+            }
+
+            img {
+                width: @size-img-xl;
+                height: @size-img-xl;
+                border: @default-border;
+                border-radius: @default-round;
+                background: @white;
+            }
+
+            .store-verified {
+                font-size: @font-size-small;
+                position: relative;
+                top: -@size-6;
+
+                .fa-stack {
+                    .fa-certificate {
+                        color: @twitter;
+                    }
+                    .fa-check {
+                        color: @white;
+                    }
+                }
+            }
+
+            .store-actions {
+                a {
+                    color: @white;
+                    font-weight: @bold;
+
+                    &:focus,
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    & + a::before {
+                        //content: '|';
+                        padding: 0 @size-6;
+                    }
+
+                }
+            }
+
+            .search-store {
+                position: relative;
+                margin: @size-10 auto;
+                max-width: 700px;
+
+                .form-control {
+                    background: @transparent-white;
+                    border: 1px solid white;
+                    color: @black;
+                    width: @full-size;
+                    float: none;
+                    box-shadow: none;
+                    display: inline-block;
+                }
+
+                .input-group-btn .btn {
+                    padding: @size-15;
+                    background-color: @transparent-white;
+                    border-color:  @white;
+                }
+            }
+
+            .schedule-store {
+                margin: @size-10 auto;
+                position: relative;
+                text-shadow: none;
+                opacity: 0.7;
+            }
+
+        }
+    }
+}
+
+.store-nav {
+    background: transparent;
+    border: none;
+
+    > div {
+        border-bottom: none !important;
+    }
+
+    .navbar-left {
+        li a {
+            color: @white;
+             text-shadow: @default-shadow;
+        }
+    }
+
+    .navbar-right > li {
+        padding: 0px @size-4;
+        
+        > a.btn {
+            margin-top: @size-6;
+            padding-bottom: @size-6;
+            padding-top: @size-6;
+            color: @primary;
+
+            &:focus,
+            &:hover {
+                text-decoration: none;
+                background-color: @btn-primary-invert-hover;
+                color: @primary;
+            }
+        }
+    }
+    
+    /* RESPONSIVE */
+    /* Medium devices (desktops, 1024 and up) */
+    @media (min-width: @screen-md-min) { 
+        .navbar-nav {
+            margin: 0;
+
+            li a {
+                padding: @size-10 @size-15;
+                font-size: @font-size-small;
+            } 
+        }
+    }
+
+    /* Large devices (large desktops, 1280px and up) */
+    @media (min-width: @screen-lg-min) { 
+        .navbar-nav {
+            margin: 0 @size-20;
+
+            li a {
+                padding:@size-15;
+                font-size: @font-size;
+            } 
+        }
+    }
+}
+
+
+// store
+.store-view-container {
+    margin-top: @navbar-jiuvii-height;
+    border-top: @default-border;
+    background: @gray-bk;
+
+    p {
+        font-size: @font-size-small;
+    }
+
+    .store-header-container {
+        background: rgba(0, 0, 0, 0) url("../images/default/default-store-banner.jpg") repeat scroll 50% center / cover ;
+        height: @size-cover;
+        position: absolute;
+        width: @full-size;
+        text-shadow: @default-shadow;
+
+        &::before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.45); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(transparent, #000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(transparent #000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(transparent, #000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(transparent, #000); /* Standard syntax (must be last) */
+}
+
+
+        img {
+            width: @size-img-md;
+            height: @size-img-md;
+            border: @default-border;
+            border-radius: @default-round;
+        }
+
+        a {
+            color: @white;
+
+            &:hover,
+            &:focus {
+                color: @white;
+                opacity: @thumb-color-hover-opacity;
+                text-decoration: @link-hover-decoration;
+            }
+        }
+
+        .storename {
+            margin-top: @size-20;
+
+            ul {
+                padding: 0;
+                list-style: none;
+
+                li {
+                    float: left;
+
+                    ul > li {
+                        float: none;
+                    }
+                }
+ 
+                .name {
+                    font-size: @font-size-h1;
+                    margin-left: @size-10;
+                }
+
+                .store-fav {
+                    font-size: 1.5em;
+                    color: @white;
+                    margin-left: @size-10;
+                }
+            }
+        }
+
+        .product-location {
+            font-size: @font-size-h5;
+            margin: @size-6;
+            color: @white;
+
+            > span::after {
+                content: ",";
+                margin-right: @size-6;
+            }
+
+            > span:last-child::after {
+                content: '';
+            }
+        }
+    }
+
+    .store-thumbs-container {
+        position: relative;
+        width: @full-size;
+        margin: 130px 0 @size-60 0;
+
+        .store-thumbs-content {
+            background-color: @body-bg;
+            border: @default-border;
+            margin-bottom: @size-40;
+            width: @full-size;
+            position: relative;
+
+            .row,
+            .col-lg-1,
+            .col-lg-2,
+            .col-lg-3,
+            .col-lg-4,
+            .col-lg-5,
+            .col-lg-6,
+            .col-lg-7,
+            .col-lg-8,
+            .col-lg-9,
+            .col-lg-10,
+            .col-lg-11,
+            .col-lg-12,
+            .col-md-1,
+            .col-md-2,
+            .col-md-3,
+            .col-md-4,
+            .col-md-5,
+            .col-md-6,
+            .col-md-7,
+            .col-md-8,
+            .col-md-9,
+            .col-md-10,
+            .col-md-11,
+            .col-md-12,
+            .col-sm-1,
+            .col-sm-2,
+            .col-sm-3,
+            .col-sm-4,
+            .col-sm-5,
+            .col-sm-6,
+            .col-sm-7,
+            .col-sm-8,
+            .col-sm-9,
+            .col-sm-10,
+            .col-sm-11,
+            .col-sm-12,
+            .col-xs-1,
+            .col-xs-2,
+            .col-xs-3,
+            .col-xs-4,
+            .col-xs-5,
+            .col-xs-6,
+            .col-xs-7,
+            .col-xs-8,
+            .col-xs-9,
+            .col-xs-10,
+            .col-xs-11,
+            .col-xs-12 {
+                padding: 0px;
+                margin: 0px;
+            }
+        }
+
+        .thumb-info {
+            .store {
+                display: none;
+            }
+            .product {
+                height: 2.6em;
+                line-height: 1.3em;
+                white-space: normal;
+            }
+        }
+    }
+}
+
+
+// profile
+.user-header {
+    margin-top: @navbar-jiuvii-height;
+    margin-bottom: (@navbar-jiuvii-height / 2);
+    position: relative;
+    width: @full-size;
+    height: 200px;
+
+    .user-header-image {
+        margin-top: 30px;
+        
+        img {
+            width: @size-img-xl;
+            height: @size-img-xl;
+            border: @default-border;
+            border-radius: @default-round;
+            background: @white;
+        }
+    }
+
+    .user-header-info {
+        div + div {
+            margin-bottom: @size-15;
+        }
+
+        .user-header-name {
+            .username {
+                float: left; 
+                max-width: 55%; 
+                margin-right:@size-10;
+            }
+        }
+
+        .user-actions {
+            float: left; 
+            width: 40%; 
+            margin-top: (@size-15 * 2);
+
+            a {
+                color: @color-text;
+                font-weight: @bold;
+
+                &:focus,
+                &:hover {
+                    text-decoration: none;
+                }
+
+            }
+        }
+
+        .user-social-info {
+            li + li {
+
+                &::before {
+                    color: @primary;
+                    content: "|";
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+}
+        
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -@size-1
+}
+
+// messages
+.messages {
+    .message-filter {
+        button {
+            height: @size-40;
+        }
+
+        .dropdown-toggle {
+            border-radius: 0;
+            margin-right: -@size-1;
+        }
+    }
+}
+
+.chat-container {
+    width: 100%;
+    position:relative;
+    overflow-y:auto;
+    overflow-x: hidden;
+    padding: @size-4;
+    font-size: @font-size-small;
+
+    .chat-bubble-item {
+        margin: @size-40 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        img {
+            border-radius: @default-round;
+            border: @default-border;
+        }
+
+        .chat-bubble-msg {
+            min-height: @size-40;
+        }
+
+        .chat-bubble-1 {
+            background: @white;
+            border: @default-border;
+            border-radius: @default-border-radius;
+            padding: @size-15;
+            position: relative;
+            height: auto;
+
+            .time-ago {
+                bottom: -(@size-20);
+                left: 0;
+                position: absolute;
+            }
+        }
+
+        .chat-bubble-2 {
+            background: none repeat scroll 0 0 #eeeeee;
+            border: 1px solid #c9c9c9;
+            border-radius: 4px;
+            padding: 12px;
+            position: relative;
+            height: auto;
+
+            .time-ago {
+                bottom: -24px;
+                right: 0;
+                position: absolute;
+            }
+        }
+
+        .chat-bubble-1:after {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 6px 8px 6px 0;
+            border-color: transparent #FFFFFF;
+            display: block;
+            width: 0;
+            z-index: 1;
+            left: -8px;
+            top: 10px;
+        }
+
+        .chat-bubble-1:before {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 6px 8px 6px 0;
+            border-color: transparent #c9c9c9;
+            display: block;
+            width: 0;
+            z-index: 0;
+            left: -9px;
+            top: 10px;
+        }
+
+        .chat-bubble-2:after  {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 6px 0 6px 8px;
+            border-color: transparent #eeeeee;
+            display: block;
+            width: 0;
+            z-index: 1;
+            right: -8px;
+            top: 10px;
+        }
+
+        .chat-bubble-2:before {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 6px 0 6px 8px;
+            border-color: transparent #c9c9c9;
+            display: block;
+            width: 0;
+            z-index: 0;
+            right: -9px;
+            top: 10px;
+        }
+    }
+}

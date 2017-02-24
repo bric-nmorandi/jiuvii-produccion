@@ -1,0 +1,72 @@
+//
+// Buttons
+// --------------------------------------------------
+
+// Alternate buttons
+// --------------------------------------------------
+
+.btn-primary {
+  .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+}
+
+.btn-primary-invert {
+  .button-variant(@btn-primary-invert-color; @btn-primary-invert-bg; @btn-primary-invert-border);
+}
+
+.btn-primary-invert:hover,
+.btn-primary-invert:focus {
+	background-color: @btn-primary-invert-hover;
+	border-color: @btn-primary-border;
+}
+
+
+
+.btn-wide {
+	padding: 10px 100px;
+	font-size: @font-size-large;
+}
+
+
+.btn-facebook,
+.btn-google {
+	padding: 10px;
+	color: @white;
+	margin-bottom: 10px;
+	font-size: @font-size-large;
+
+	.fa {
+		float: left;
+		padding: 2px;
+	}
+}
+
+.btn-facebook {
+	background-color: @facebook;
+
+	&:hover,
+	&:focus {
+		background-color: #405a98;
+		color: @white;
+	}
+}
+
+.btn-google {
+	background-color: @google;
+
+	&:hover,
+	&:focus {
+		background-color: #d64432;
+		color: @white;
+	}
+}
+
+.btn-link {
+	color: @primary;
+
+	&:hover,
+	&:focus {
+		color: @link-hover-color;
+	    text-decoration: @link-hover-decoration;
+	    outline: medium none;
+	}
+}

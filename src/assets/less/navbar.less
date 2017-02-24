@@ -1,0 +1,381 @@
+//
+// Navbars
+// --------------------------------------------------
+
+// Groups `.navbar-brand` and `.navbar-toggle` into a single component for easy
+// styling of responsive aspects.
+
+nav {
+    .selected > a {
+        border-bottom: @navbar-selected-border;
+        color: @primary !important;
+        height: @navbar-sticky-height;
+    }
+}
+
+// Brand/project name
+.navbar-brand,
+.container-fluid > .navbar-brand {
+    padding: @size-6 0px;
+    margin-left: 0!important;
+    height: @navbar-jiuvii-height;
+
+    > img {
+        display: block;
+        width: @size-img-md;
+    }
+}
+
+
+/* RESPONSIVE PRIMARY NAVBAR /////////////////// */
+.nav-mobile {
+    display: block;
+
+    .navbar-jiuvii {
+        height: 60px;
+    }
+
+    .navbar-container {
+        background: @body-bg;
+        position: relative;
+        width: @full-size;
+        z-index: 10;
+        font-size: 12px;
+        line-height: 1em;
+        min-width: 200px;
+
+        .navbar-header {
+            padding-left: @size-15;
+
+            .navbar-brand {
+                height: 60px;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+
+        .nav-left,
+        .nav-user,
+        .navbar-right {
+            display: none;
+        }
+
+        .nav-user .avatar {
+            display: block !important;
+        }
+
+        .navbar-form.navbar-left {
+            float: none;
+            position: relative;
+            width: 100%;
+            margin:0;
+
+            .input-lg {
+                font-size: 12px;
+                height: 40px;
+            }
+
+            .input-group-btn button {
+                height: 40px;
+            }
+        }
+
+        .mobile-nav-right {
+            display: flex;
+            float: left;
+            left: 70px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+}
+
+
+// Navbar form
+.navbar-form {
+    padding-top: @size-6;
+
+    // Buttons in navbars
+    .input-group-btn:last-child > .btn, 
+    .input-group-btn:last-child > .btn-group {
+        border-radius: 0 @default-border-radius @default-border-radius 0;
+        height: 46px;
+    }
+}
+
+// Alternate navbars
+// --------------------------------------------------
+
+// Jiuvii navbar
+.navbar-jiuvii {
+    background-color: @navbar-jiuvii-bg;
+    border-radius: 0;
+
+    .navbar-text {
+        color: @navbar-jiuvii-color;
+    }
+
+    .nav.navbar-nav {
+        padding-top: 12px;
+    }
+
+    /* Medium devices (desktops, 1024 and up) */
+    @media (min-width: @screen-md-min) { 
+        .navbar-form {
+            padding: @size-10 0px;
+        }
+
+        .navbar-right {
+            li > a {
+                padding: @size-10 (@size-6 * 2);
+            }
+
+            li .btn {
+                // padding: @size-15 (@size-6 * 2);
+            }
+
+            .cartname,
+            .username,
+            .mobile-nav-user {
+                display: none;
+            }
+        }
+    }
+
+    /* Large devices (large desktops, 1280px and up) */
+    @media (min-width: @screen-lg-min) { 
+        .navbar-form {
+            padding: @size-10 @size-15;
+        }
+
+        .navbar-right {
+            li > a {
+                padding: @size-10 @size-15;
+
+                .cartname,
+                .username {
+                    display: inline;
+                }
+            }
+        }
+    }  
+
+    .navbar-nav .open a,
+    .navbar-nav .open a:focus,
+    .navbar-nav .open a:hover,
+    .dropdown-menu li a:focus,
+    .dropdown-menu li a:hover,
+    .dropdown-menu a {
+        background-color: transparent;
+    }
+
+    .navbar-nav .open a:hover,
+    .dropdown-menu li a:hover {
+        color:  @navbar-jiuvii-color;
+    }
+
+    .avatar {
+        border: @default-border;
+        border-radius: @default-round;
+        margin: -@size-20 @size-6 -@size-20 0;
+        height: @size-img-sm;
+        width:  @size-img-sm;
+    }
+
+    .badge {
+        background-color: @badge-bg;
+        border-radius: @badge-border-radius;
+        color: @badge-color;
+        height: @badge-size;
+        line-height: @size-20;
+        padding: 3px;
+        position: absolute;
+        right: -@size-10;
+        top: -@size-6;
+        width: @badge-size;
+
+        &.mini {
+            font-size: @size-10;
+            height: @size-20;
+            line-height: @size-20;
+            padding: 0;
+            right: 0;
+            top: @size-6;
+            width: @size-20;
+        }
+    }
+
+    .icon {
+        font-size: @font-size-h3;
+    }
+
+    &.primary-navbar {
+        height: @navbar-jiuvii-height;
+        border-bottom-color: transparent;
+        margin-bottom: 0;
+    }
+
+    &.secondary-navbar {
+        height: (@navbar-jiuvii-height / 2);
+        border-top-color: transparent;
+        z-index: 10;
+
+        > div {
+            border-bottom: @default-border;
+        }
+
+        .nav.navbar-nav {
+            padding-top: 0;
+        }
+    }
+}
+
+.mobile-nav-right {
+    display: none;
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (min-width: 320px) and (max-width: 767px) {  
+    .navbar-jiuvii {
+        padding: 0;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { 
+    .navbar-jiuvii {
+        padding: 0 40px 0 20px;
+    }
+}
+
+
+// stores index nav
+.stores-index-nav-container {
+    background: @white;
+    position: absolute;
+    left: 0;
+    top: @navbar-jiuvii-height;
+    width: @full-size;
+    max-height: @size-product; 
+    overflow: auto;
+
+    .stores-index-nav-content {
+        border-top: @default-border;
+        border-bottom: @default-border;
+        padding: @size-20 @size-40 0 @size-40;
+        position: relative;
+        width: @full-size;
+
+        .store-index-nav-box {
+            border: @default-border;
+            max-height: @full-size;
+            height: 140px;
+            margin-bottom: @size-20;
+            padding: @size-10;
+            font-size: @font-size-small;
+
+            img {
+                width: @size-img-md;
+                height: @size-img-md;
+                border-radius: @default-round;
+            }
+
+            .store-type {
+                font-size: @font-size-small !important;
+                margin-bottom: 0px !important;
+            }
+
+            .fa {
+                width: @size-20;
+            }
+        }
+    }
+}
+
+// navbar sticky
+.navbar-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: @full-size;
+  background: @white;
+  z-index: 1;
+  border-bottom:@default-border;
+  height: @navbar-sticky-height;
+  padding: 0 @size-20;
+}
+
+.navbar-noHeader {
+  position: fixed;
+  top: @navbar-jiuvii-height;
+  left: 0;
+  width: @full-size;
+  background: @white;
+  z-index: 1;
+  padding-right: @size-20;
+}
+
+.cart.collapse,
+.cart.collapse.in,
+.cart.collapsing.in,
+.cart.collapsing {
+    width:400px;
+    height: 100vh;
+    min-height: 100vh;
+    background: @white;
+    border-left: @default-border;
+    -webkit-transition: width 0.35s ease;
+    -moz-transition: width 0.35s ease;
+    -o-transition: width 0.35s ease;
+    transition: width 0.35s ease;
+}
+
+// product
+.product-navbar-container {
+    padding: 0 @size-20;
+    
+    .product-navbar li {
+        padding: @size-10 @size-6;
+
+        .btn {
+            margin-top: -@size-4;
+            padding: @size-6 @size-40;
+        }
+    }
+
+    img {
+        border: @default-border;
+        height: @size-img-sm;
+        width:  @size-img-sm; 
+    }
+}
+
+/* Medium and large devices  */
+@media (min-width: 991px) and (max-width: 3000px) { 
+    .suscribite input {
+        background: transparent none repeat scroll 0 0;
+        color: white;
+    }
+
+    .suscribite input:focus {
+        border-color: #ccc;
+    }
+
+    .suscribite button {
+        background: transparent none repeat scroll 0 0;
+        border: 1px solid #ccc;
+        height: 34px;
+        margin-right: 6px;
+        color: white;
+    }
+
+    .suscribite button:hover,
+    .suscribite button:focus {
+        opacity: 0.9;
+    }
+}
+

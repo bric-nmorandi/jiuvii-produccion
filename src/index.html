@@ -1,0 +1,647 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jiuvii</title>
+  <base href="/">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='assets/js/owl.carousel.min.js'></script>
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|family=Open+Sans:300,400,600,700|Droid+Sans:400,700|Open+Sans+Condensed:300,700|Quicksand:300,400,500,700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/24d363a262.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script>
+
+$(".clickable-row").click(function() {
+        window.document.location = $(this).data("target");
+    });
+
+  /* REGISTER */  
+  $(".register-me").click(function(){
+      $(".register-confirm").removeClass("hide");
+      $(".register").addClass("hide");
+  }); 
+
+    /* FORGOT PASSWORD */  
+  $(".forgot-password").click(function(){
+      $(".reset-password").removeClass("hide");
+      $(".signIn").addClass("hide");
+  }); 
+
+    $(".reset-password-continue").click(function(){
+      $(".reset-password").addClass("hide");
+      $(".reset-password-continue-message").removeClass("hide");
+  }); 
+
+  /* USER PANEL */  
+  $(".show-user-panel").click(function(){
+      $(".user-panel").removeClass("hide");
+      $(".user-account").addClass("hide");
+      $(".user-purchases").addClass("hide");
+      $(".user-rate").addClass("hide");
+      $(".user-address").addClass("hide");
+      $(".user-settings").addClass("hide");
+      $(".user-following-detail").addClass("hide");
+      $(".user-followers-detail").addClass("hide");
+      $(".user-products-favorites-detail").addClass("hide");
+      $(".user-products-bought-detail").addClass("hide");
+      $(".user-favorite-following-stores-detail").addClass("hide");
+
+  }); 
+
+  /* USER PANEL ACCOUNT*/  
+  $(".show-user-account").click(function(){
+      $(".user-account").removeClass("hide");
+      $(".user-panel").addClass("hide");
+      $(".user-purchases").addClass("hide");
+      $(".user-rate").addClass("hide");
+      $(".user-address").addClass("hide");
+      $(".user-settings").addClass("hide");
+      $(".user-following-detail").addClass("hide");
+      $(".user-followers-detail").addClass("hide");
+      $(".user-products-favorites-detail").addClass("hide");
+      $(".user-products-bought-detail").addClass("hide");
+      $(".user-favorite-following-stores-detail").addClass("hide");
+  }); 
+
+  /* USER PANEL PURCHASES*/  
+  $(".show-user-purchases").click(function(){
+      $(".user-purchases").removeClass("hide");
+      $(".user-panel").addClass("hide");
+      $(".user-account").addClass("hide");
+      $(".user-rate").addClass("hide");
+      $(".user-address").addClass("hide");
+      $(".user-settings").addClass("hide");
+      $(".user-following-detail").addClass("hide");
+      $(".user-followers-detail").addClass("hide");
+      $(".user-products-favorites-detail").addClass("hide");
+      $(".user-products-bought-detail").addClass("hide");
+      $(".user-favorite-following-stores-detail").addClass("hide");
+  }); 
+
+  /* USER PANEL RATE*/  
+  $(".show-user-rate").click(function(){
+      $(".user-rate").removeClass("hide");
+      $(".user-purchases").addClass("hide");
+      $(".user-panel").addClass("hide");
+      $(".user-account").addClass("hide");
+      $(".user-address").addClass("hide");
+      $(".user-settings").addClass("hide");
+      $(".user-following-detail").addClass("hide");
+      $(".user-followers-detail").addClass("hide");
+      $(".user-products-favorites-detail").addClass("hide");
+      $(".user-products-bought-detail").addClass("hide");
+      $(".user-favorite-following-stores-detail").addClass("hide");
+  }); 
+
+  /* USER PANEL following detail */  
+  $(".show-user-following-detail").click(function(){
+      $(".user-following-detail").removeClass("hide");
+      $(".user-followers-detail").addClass("hide");
+      $(".user-products-favorites-detail").addClass("hide");
+      $(".user-products-bought-detail").addClass("hide");
+      $(".user-favorite-following-stores-detail").addClass("hide");
+      $(".user-rate").addClass("hide");
+      $(".user-purchases").addClass("hide");
+      $(".user-panel").addClass("hide");
+      $(".user-account").addClass("hide");
+      $(".user-address").addClass("hide");
+      $(".user-settings").addClass("hide");
+  }); 
+
+ /* USER PANEL following detail */  
+  $(".show-user-followers-detail").click(function(){
+      $(".user-followers-detail").removeClass("hide");
+      $(".user-following-detail").addClass("hide");
+      $(".user-products-favorites-detail").addClass("hide");
+      $(".user-products-bought-detail").addClass("hide");
+      $(".user-favorite-following-stores-detail").addClass("hide");
+      $(".user-rate").addClass("hide");
+      $(".user-purchases").addClass("hide");
+      $(".user-panel").addClass("hide");
+      $(".user-account").addClass("hide");
+      $(".user-address").addClass("hide");
+      $(".user-settings").addClass("hide");
+  }); 
+
+  /* USER PANEL baught detail */  
+  $(".show-user-products-bought-detail").click(function(){
+      $(".user-products-bought-detail").removeClass("hide");
+      $(".user-following-detail").addClass("hide");
+      $(".user-followers-detail").addClass("hide");
+      $(".user-products-favorites-detail").addClass("hide");
+      $(".user-favorite-following-stores-detail").addClass("hide");
+      $(".user-rate").addClass("hide");
+      $(".user-purchases").addClass("hide");
+      $(".user-panel").addClass("hide");
+      $(".user-account").addClass("hide");
+      $(".user-address").addClass("hide");
+      $(".user-settings").addClass("hide");
+  }); 
+
+    /* USER PANEL favorites products detail */  
+  $(".show-user-products-favorites-detail").click(function(){
+      $(".user-products-favorites-detail").removeClass("hide");
+      $(".user-following-detail").addClass("hide");
+      $(".user-followers-detail").addClass("hide");
+      $(".user-products-bought-detail").addClass("hide");
+      $(".user-favorite-following-stores-detail").addClass("hide");
+      $(".user-rate").addClass("hide");
+      $(".user-purchases").addClass("hide");
+      $(".user-panel").addClass("hide");
+      $(".user-account").addClass("hide");
+      $(".user-address").addClass("hide");
+      $(".user-settings").addClass("hide");
+  }); 
+
+  /* USER PANEL favorite-following-stores detail */  
+  $(".show-user-favorite-following-stores-detail").click(function(){
+      $(".user-favorite-following-stores-detail").removeClass("hide");
+      $(".user-following-detail").addClass("hide");
+      $(".user-followers-detail").addClass("hide");
+      $(".user-products-bought-detail").addClass("hide");
+      $(".user-products-favorites-detail").addClass("hide");
+      $(".user-rate").addClass("hide");
+      $(".user-purchases").addClass("hide");
+      $(".user-panel").addClass("hide");
+      $(".user-account").addClass("hide");
+      $(".user-address").addClass("hide");
+      $(".user-settings").addClass("hide");
+  }); 
+
+
+  /*rate step 1 to 2 */
+  $("#btn-rate-sale-next-02").click(function(){
+      $(".rate-sale-step-02").removeClass("hide");
+      $(".btn-rate-sale-next-03").removeClass("hide");
+      $(".btn-rate-sale-back-01").removeClass("hide");
+
+      $(".rate-sale-step-01").addClass("hide");
+      $(".rate-sale-step-03").addClass("hide");
+      $(".rate-sale-step-04").addClass("hide");
+
+      $(".btn-rate-sale-next-02").addClass("hide");
+      $(".btn-rate-sale-finish").addClass("hide");
+      $(".btn-rate-sale-back-02").addClass("hide");
+    }); 
+
+    /*rate step 2 to 3*/
+    $("#btn-rate-sale-next-03").click(function(){
+      $(".rate-sale-step-03").removeClass("hide");
+      $(".btn-rate-sale-back-02").removeClass("hide");
+      $(".btn-rate-sale-finish").removeClass("hide");   
+
+      $(".rate-sale-step-01").addClass("hide");
+      $(".rate-sale-step-02").addClass("hide");
+      $(".rate-sale-step-04").addClass("hide");
+
+      $(".btn-rate-sale-next-03").addClass("hide");
+      $(".btn-rate-sale-back-01").addClass("hide");
+    }); 
+    
+    /*rate step 2 to 1*/
+    $("#btn-rate-sale-back-01").click(function(){
+      $(".rate-sale-step-01").removeClass("hide");
+      $(".btn-rate-sale-next-02").removeClass("hide");
+
+      $(".rate-sale-step-02").addClass("hide");
+      $(".rate-sale-step-03").addClass("hide");
+      $(".rate-sale-step-04").addClass("hide");
+
+      $(".btn-rate-sale-next-03").addClass("hide");
+      $(".btn-rate-sale-finish").addClass("hide");
+      $(".btn-rate-sale-back-01").addClass("hide");
+    }); 
+
+     /*rate step 3 to 4*/
+    $("#btn-rate-sale-finish").click(function(){
+      $(".rate-sale-step-04").removeClass("hide");
+      
+      $(".rate-sale-step-01").addClass("hide");
+      $(".rate-sale-step-02").addClass("hide");
+      $(".rate-sale-step-03").addClass("hide");
+
+      $(".btn-rate-sale-next-02").addClass("hide");
+      $(".btn-rate-sale-next-03").addClass("hide");
+      $(".btn-rate-sale-finish").addClass("hide");
+      $(".btn-rate-sale-back-01").addClass("hide");
+      $(".btn-rate-sale-back-02").addClass("hide");
+    }); 
+
+     /*rate step 3 to 2*/
+    $("#btn-rate-sale-back-02").click(function(){
+      $(".rate-sale-step-02").removeClass("hide");
+      $(".btn-rate-sale-next-03").removeClass("hide");
+      $(".btn-rate-sale-back-01").removeClass("hide");
+
+      $(".rate-sale-step-01").addClass("hide");
+      $(".rate-sale-step-03").addClass("hide");
+      $(".rate-sale-step-04").addClass("hide");
+
+      $(".btn-rate-sale-next-01").addClass("hide");
+      $(".btn-rate-sale-next-02").addClass("hide");
+      $(".btn-rate-sale-back-02").addClass("hide");
+      $(".btn-rate-sale-finish").addClass("hide");
+    }); 
+
+     /*rate step 3 to finish */
+    $("#btn-rate-sale-finish").click(function(){
+       $(".btn-rate-sale-cancel").addClass("hide");
+    }); 
+
+      /*rate step 1 to 2 */
+  $("#btn-rate-purchase-next-02").click(function(){
+      $(".rate-purchase-step-02").removeClass("hide");
+      $(".btn-rate-purchase-next-03").removeClass("hide");
+      $(".btn-rate-purchase-back-01").removeClass("hide");
+
+      $(".rate-purchase-step-01").addClass("hide");
+      $(".rate-purchase-step-03").addClass("hide");
+      $(".rate-purchase-step-04").addClass("hide");
+
+      $(".btn-rate-purchase-next-02").addClass("hide");
+      $(".btn-rate-purchase-finish").addClass("hide");
+      $(".btn-rate-purchase-back-02").addClass("hide");
+    }); 
+
+    /*rate step 2 to 3*/
+    $("#btn-rate-purchase-next-03").click(function(){
+      $(".rate-purchase-step-03").removeClass("hide");
+      $(".btn-rate-purchase-back-02").removeClass("hide");
+      $(".btn-rate-purchase-finish").removeClass("hide");   
+
+      $(".rate-purchase-step-01").addClass("hide");
+      $(".rate-purchase-step-02").addClass("hide");
+      $(".rate-purchase-step-04").addClass("hide");
+
+      $(".btn-rate-purchase-next-03").addClass("hide");
+      $(".btn-rate-purchase-back-01").addClass("hide");
+    }); 
+    
+    /*rate step 2 to 1*/
+    $("#btn-rate-purchase-back-01").click(function(){
+      $(".rate-purchase-step-01").removeClass("hide");
+      $(".btn-rate-purchase-next-02").removeClass("hide");
+
+      $(".rate-purchase-step-02").addClass("hide");
+      $(".rate-purchase-step-03").addClass("hide");
+      $(".rate-purchase-step-04").addClass("hide");
+
+      $(".btn-rate-purchase-next-03").addClass("hide");
+      $(".btn-rate-purchase-finish").addClass("hide");
+      $(".btn-rate-purchase-back-01").addClass("hide");
+    }); 
+
+     /*rate step 3 to 4*/
+    $("#btn-rate-purchase-finish").click(function(){
+      $(".rate-purchase-step-04").removeClass("hide");
+      
+      $(".rate-purchase-step-01").addClass("hide");
+      $(".rate-purchase-step-02").addClass("hide");
+      $(".rate-purchase-step-03").addClass("hide");
+
+      $(".btn-rate-purchase-next-02").addClass("hide");
+      $(".btn-rate-purchase-next-03").addClass("hide");
+      $(".btn-rate-purchase-finish").addClass("hide");
+      $(".btn-rate-purchase-back-01").addClass("hide");
+      $(".btn-rate-purchase-back-02").addClass("hide");
+    }); 
+
+     /*rate step 3 to 2*/
+    $("#btn-rate-purchase-back-02").click(function(){
+      $(".rate-purchase-step-02").removeClass("hide");
+      $(".btn-rate-purchase-next-03").removeClass("hide");
+      $(".btn-rate-purchase-back-01").removeClass("hide");
+
+      $(".rate-purchase-step-01").addClass("hide");
+      $(".rate-purchase-step-03").addClass("hide");
+      $(".rate-purchase-step-04").addClass("hide");
+
+      $(".btn-rate-purchase-next-01").addClass("hide");
+      $(".btn-rate-purchase-next-02").addClass("hide");
+      $(".btn-rate-purchase-back-02").addClass("hide");
+      $(".btn-rate-purchase-finish").addClass("hide");
+    }); 
+
+     /*rate step 3 to finish */
+    $("#btn-rate-purchase-finish").click(function(){
+       $(".btn-rate-purchase-cancel").addClass("hide");
+    }); 
+
+  /* USER PANEL ADDRESS*/  
+  $(".show-user-address").click(function(){
+      $(".user-address").removeClass("hide");
+      $(".user-panel").addClass("hide");
+      $(".user-account").addClass("hide");
+      $(".user-purchases").addClass("hide");
+      $(".user-rate").addClass("hide");
+      $(".user-settings").addClass("hide");
+  }); 
+
+  /* USER FOLLOW */
+   $(".user-follow").click(function(){
+      $(".user-follow").addClass("hide");
+      $(".user-following").removeClass("hide");
+  }); 
+  $(".user-following").click(function(){
+      $(".user-following").addClass("hide");
+      $(".user-follow").removeClass("hide");
+  }); 
+
+  /* USER PANEL SETTINGS*/  
+  $(".show-user-settings").click(function(){
+      $(".user-settings").removeClass("hide");
+      $(".user-panel").addClass("hide");
+      $(".user-account").addClass("hide");
+      $(".user-purchases").addClass("hide");
+      $(".user-rate").addClass("hide");
+      $(".user-address").addClass("hide");
+  });
+
+
+ /* store PANEL */  
+  $(".show-store-panel").click(function(){
+      $(".store-panel").removeClass("hide");
+      $(".store-account").addClass("hide");
+      $(".store-publications").addClass("hide");
+      $(".store-sales").addClass("hide");
+      $(".store-rate").addClass("hide");
+      $(".store-bills").addClass("hide");
+      $(".store-settings").addClass("hide");
+      $(".store-product-detail").addClass("hide");
+      $(".store-store-views-detail").addClass("hide");
+      $(".store-store-follow-like-detail").addClass("hide");
+      $(".store-store-clients-detail").addClass("hide");
+      
+  }); 
+
+  /* store PANEL ACCOUNT*/  
+  $(".show-store-account").click(function(){
+      $(".store-account").removeClass("hide");
+      $(".store-panel").addClass("hide");
+      $(".store-publications").addClass("hide");
+      $(".store-sales").addClass("hide");
+      $(".store-rate").addClass("hide");
+      $(".store-bills").addClass("hide");
+      $(".store-settings").addClass("hide");
+      $(".store-product-detail").addClass("hide");
+      $(".store-store-views-detail").addClass("hide");
+      $(".store-store-follow-like-detail").addClass("hide");
+      $(".store-store-clients-detail").addClass("hide");
+  }); 
+
+    /* store PANEL sales*/  
+  $(".show-store-publications").click(function(){
+      $(".store-publications").removeClass("hide");
+      $(".store-panel").addClass("hide");
+      $(".store-account").addClass("hide");
+      $(".store-sales").addClass("hide");
+      $(".store-rate").addClass("hide");
+      $(".store-bills").addClass("hide");
+      $(".store-settings").addClass("hide");
+      $(".store-product-detail").addClass("hide");
+      $(".store-store-views-detail").addClass("hide");
+      $(".store-store-follow-like-detail").addClass("hide");
+      $(".store-store-clients-detail").addClass("hide");
+  }); 
+
+  /* store PANEL sales*/  
+  $(".show-store-sales").click(function(){
+      $(".store-sales").removeClass("hide");
+      $(".store-panel").addClass("hide");
+      $(".store-account").addClass("hide");
+      $(".store-publications").addClass("hide");
+      $(".store-rate").addClass("hide");
+      $(".store-bills").addClass("hide");
+      $(".store-settings").addClass("hide");
+      $(".store-product-detail").addClass("hide");
+      $(".store-store-views-detail").addClass("hide");
+      $(".store-store-follow-like-detail").addClass("hide");
+      $(".store-store-clients-detail").addClass("hide");
+  }); 
+
+  /* store PANEL RATE*/  
+  $(".show-store-rate").click(function(){
+      $(".store-rate").removeClass("hide");
+      $(".store-publications").addClass("hide");
+      $(".store-sales").addClass("hide");
+      $(".store-panel").addClass("hide");
+      $(".store-account").addClass("hide");
+      $(".store-bills").addClass("hide");
+      $(".store-settings").addClass("hide");
+      $(".store-product-detail").addClass("hide");
+      $(".store-store-views-detail").addClass("hide");
+      $(".store-store-follow-like-detail").addClass("hide");
+      $(".store-store-clients-detail").addClass("hide");
+  }); 
+
+  /* store PANEL BILLS*/  
+  $(".show-store-bills").click(function(){
+      $(".store-bills").removeClass("hide");
+      $(".store-panel").addClass("hide");
+      $(".store-account").addClass("hide");
+      $(".store-publications").addClass("hide");
+      $(".store-sales").addClass("hide");
+      $(".store-rate").addClass("hide");
+      $(".store-settings").addClass("hide");
+      $(".store-product-detail").addClass("hide");
+      $(".store-store-views-detail").addClass("hide");
+      $(".store-store-follow-like-detail").addClass("hide");
+      $(".store-store-clients-detail").addClass("hide");
+  }); 
+
+  /* store PANEL SETTINGS*/  
+  $(".show-store-settings").click(function(){
+      $(".store-settings").removeClass("hide");
+      $(".store-panel").addClass("hide");
+      $(".store-account").addClass("hide");
+      $(".store-publications").addClass("hide");
+      $(".store-sales").addClass("hide");
+      $(".store-rate").addClass("hide");
+      $(".store-bills").addClass("hide");
+      $(".store-product-detail").addClass("hide");
+      $(".store-store-views-detail").addClass("hide");
+      $(".store-store-follow-like-detail").addClass("hide");
+      $(".store-store-clients-detail").addClass("hide");
+  });
+
+  /* store PANEL PRODUCT DETAILS */  
+  $(".show-store-product-detail").click(function(){
+      $(".store-product-detail").removeClass("hide");
+      $(".store-store-views-detail").addClass("hide");
+      $(".store-store-follow-like-detail").addClass("hide");
+      $(".store-store-clients-detail").addClass("hide");
+      $(".store-panel").addClass("hide");
+      $(".store-account").addClass("hide");
+      $(".store-publications").addClass("hide");
+      $(".store-sales").addClass("hide");
+      $(".store-rate").addClass("hide");
+      $(".store-bills").addClass("hide");
+      $(".store-settings").addClass("hide");
+  });
+
+  /* store PANEL STORE VIEWS DETAILS */  
+  $(".show-store-store-views-detail").click(function(){
+      $(".store-store-views-detail").removeClass("hide");
+      $(".store-store-follow-like-detail").addClass("hide");
+      $(".store-store-clients-detail").addClass("hide");
+      $(".store-product-detail").addClass("hide");
+      $(".store-panel").addClass("hide");
+      $(".store-account").addClass("hide");
+      $(".store-publications").addClass("hide");
+      $(".store-sales").addClass("hide");
+      $(".store-rate").addClass("hide");
+      $(".store-bills").addClass("hide");
+      $(".store-settings").addClass("hide");
+  });
+
+  /* store PANEL STORE FOLLOW and LIKES DETAILS */  
+  $(".show-store-store-follow-like-detail").click(function(){
+      $(".store-store-follow-like-detail").removeClass("hide");
+      $(".store-store-views-detail").addClass("hide");
+      $(".store-store-clients-detail").addClass("hide");
+      $(".store-product-detail").addClass("hide");
+      $(".store-panel").addClass("hide");
+      $(".store-account").addClass("hide");
+      $(".store-publications").addClass("hide");
+      $(".store-sales").addClass("hide");
+      $(".store-rate").addClass("hide");
+      $(".store-bills").addClass("hide");
+      $(".store-settings").addClass("hide");
+  });
+
+  /* store PANEL STORE CLIENTS DETAILS */  
+  $(".show-store-store-clients-detail").click(function(){
+      $(".store-store-clients-detail").removeClass("hide");
+      $(".store-store-views-detail").addClass("hide");
+      $(".store-store-follow-like-detail").addClass("hide");
+      $(".store-product-detail").addClass("hide");
+      $(".store-panel").addClass("hide");
+      $(".store-account").addClass("hide");
+      $(".store-publications").addClass("hide");
+      $(".store-sales").addClass("hide");
+      $(".store-rate").addClass("hide");
+      $(".store-bills").addClass("hide");
+      $(".store-settings").addClass("hide");
+  });
+
+
+  /* STORE FOLLOW */
+   $(".store-follow").click(function(){
+      $(".store-follow").addClass("hide");
+      $(".store-following").removeClass("hide");
+  }); 
+  $(".store-following").click(function(){
+      $(".store-following").addClass("hide");
+      $(".store-follow").removeClass("hide");
+  }); 
+
+  /* THUMB FAVORITE */
+  $(".thumb-favorite").click(function(){
+      $(".thumb-favorite").addClass("hide");
+      $(".thumb-favorited").removeClass("hide");
+  }); 
+  
+  $(".thumb-favorited").click(function(){
+      $(".thumb-favorited").addClass("hide");
+      $(".thumb-favorite").removeClass("hide");
+  }); 
+
+  /* CART */
+  $(".cart-item").mouseover(function(){
+      $(".change-quantity").removeClass("invisible");
+      $(".item-delete").removeClass("invisible");
+      $(".item-cart-msg").removeClass("invisible");
+  }); 
+    $(".cart-item").mouseout(function(){
+      $(".change-quantity").addClass("invisible");
+      $(".item-delete").addClass("invisible");
+      $(".item-cart-msg").addClass("invisible");
+  }); 
+
+    /* ADD TO CART */
+  $(".addToCart").click(function(){
+      $(".cart_arrow_box").removeClass("hide");
+      $(".cart_arrow_box").addClass("animation");
+      $(".cart_arrow_box").addClass("fadeOut");
+  }); 
+  
+/* LOCATION*/  
+  $(".location-add").click(function(){
+      $(".userLocation").addClass("hide");
+      $(".userLocationAdd").removeClass("hide");
+  }); 
+  $(".userLocationAddCancel").click(function(){
+      $(".userLocationAdd").addClass("hide");
+      $(".userLocation").removeClass("hide");
+  }); 
+
+  $(".location-edit").click(function(){
+      $(".userLocation").addClass("hide");
+      $(".userLocationEdit").removeClass("hide");
+      $(".userLocationDelete").removeClass("hide");
+  }); 
+  $(".userLocationEditCancel").click(function(){
+      $(".userLocationEdit").addClass("hide");
+      $(".userLocation").removeClass("hide");
+      $(".userLocationDelete").addClass("hide");
+  });
+
+    /* THUMB SWITCH VIEWS */
+    $(".switch-view-thumbs").click(function(){
+        $(".thumb-card").removeClass("view-list");
+        $(".thumb-card").addClass("view-thumbs");
+    }); 
+
+    $(".switch-view-list").click(function(){
+        $(".thumb-card").removeClass("view-thumbs");
+        $(".thumb-card").addClass("view-list");
+    });  
+
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+
+  
+  // mobile nav
+  $(function checkWindowSize() {  
+    if ( $(window).width() < 767) { 
+        $('header').addClass('nav-mobile');  
+        } else {  
+        $('header').removeClass('nav-mobile');  
+    } 
+});
+  
+/*sticky navbar */
+(function($) {
+  "use strict";
+
+  var $navbar = $("#float-navbar"),
+      y_pos = $navbar.offset().top,
+      height = $navbar.height();
+
+  $(document).scroll(function() {
+      var scrollTop = $(this).scrollTop();
+
+      if (scrollTop > y_pos + height) {
+          $navbar.addClass("navbar-sticky").animate({
+              top: "75px"
+          });
+      } else if (scrollTop <= y_pos) {
+          $navbar.removeClass("navbar-sticky").clearQueue().animate({
+              top: "0"
+          }, 0);
+      }
+  });
+
+  })(jQuery, undefined);
+
+</script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

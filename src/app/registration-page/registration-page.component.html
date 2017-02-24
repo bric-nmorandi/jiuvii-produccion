@@ -1,0 +1,55 @@
+	<!-- CONTENT -->
+	<!-- background -->
+	<div class="page-bk register-bk">
+	</div>
+	
+	<main class="container">
+		<div class="log-container">
+			<a [routerLink]="['/']">
+				<div class="logo">
+				</div>
+			</a>
+			<div class="log-content">
+				<div class="register">
+					<h2 class="text-center">
+						Registrate gratis en Jiuvii!
+					</h2>
+
+					<form (submit)="register($event, name.value, email.value, password.value)">
+						<input #name type="text" id="name" name="name" value="" placeholder="Nombre" class="input-lg">
+						<input name="lastname" value="" placeholder="Apellido" type="text" class="input-lg">
+						<input #email type="email" id="email" name="email" value="" placeholder="Email" class="input-lg">
+						<input #password type="password" id="inputPassword" name="password" value="" placeholder="Contraseña (min 6 caracteres)" class="input-lg">
+						
+						<button class="btn btn-block btn-wide btn-primary register-me" type="submit">Registrarme</button>
+						
+						<hr/>
+
+						<a (click)="loginWithFacebook()" class="btn btn-block btn-facebook">
+							<i class="fa fa-facebook-square fa-lg"></i>
+							Ingresa con Facebook
+						</a>
+						
+						<a (click)="loginWithGoogle()" class="btn btn-block btn-google">
+							<i class="fa fa-google-plus-square fa-lg"></i>
+							Ingresa con Google
+						</a>
+					</form>
+					<div class="text-center margin">
+						<h5>
+							¿Ya tenés cuenta?
+							<a [routerLink]="['/login']">Iniciar sesion</a>
+						</h5>
+						<h5>
+							Cuando creas una cuenta, aceptas los 
+							<a href="#">términos y condiciones</a> 
+							y las 
+							<a href="#">políticas de privacidad</a> 
+							de Jiuvii. 
+						</h5>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</main>

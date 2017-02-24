@@ -1,0 +1,153 @@
+//
+// LISTS
+// --------------------------------------------------
+
+// List group
+.list-group-item-title {
+    font-size: @font-size-h4;
+    background-color: @gray-bk;
+}
+
+.list-group-item-container {
+    .title {
+        color: @black;
+        font-size: @font-size-h4;
+    }
+}
+
+.list-group-item.selected,
+.list-subgroup-item a.selected {
+    font-weight: @bold;
+    color: @primary;
+}
+
+.list-group-item > .icon {
+    margin-top: @size-4;
+}
+
+.list-subgroup-item {
+    margin-bottom: -@size-1 !important;
+    border-radius: 0 !important;
+    max-height: @size-cover;
+    overflow: auto;
+
+    a {
+        color: @black;
+
+        &:hover,
+        &:focus {
+            color: @link-hover-color;
+            text-decoration: @link-hover-decoration;
+        }
+    }
+    
+    ul {
+        font-size: @font-size-small;
+        line-height: (@size-15 * 2);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .icon {
+            margin-top: @size-6;
+        }
+
+        input{
+            vertical-align: sub;
+        }
+    }
+}
+
+
+// store type
+.store-type {
+    list-style: none;
+    padding: 0;
+    font-size: @font-size-h5;
+
+    li {
+        display: inline;
+
+        &::after {
+            content: ',';
+
+        } 
+        
+        &:last-child::after {
+            content: '';
+        }
+
+        a {
+            color: @color-text;
+
+            &:hover,
+            &:focus {
+                color: @black;
+            }
+        }
+    }
+}   
+
+// icon list
+.icon-list {
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .icon-list-item {
+        
+        .icon {
+            border-right: @default-border;
+            font-size: 1.5em;
+
+            .fa,
+            img {
+                width: @size-40;
+                height: (@size-10 + @size-40);
+            }
+        }
+    }
+}
+
+// avatar list
+.avatar-list {
+    .avatar-list-item {
+        border-top: @default-border;
+        font-size: @font-size-small;
+        padding: @size-15 0 0 0;
+        
+        img {
+            width: @size-img-sm;
+            height: @size-img-sm;
+            border: @default-border;
+            border-radius: @default-round;
+        }
+
+        &:first-child {
+            border: none;
+        }
+
+        .media-body > div {
+            margin: @size-6 0px;
+        }
+    }
+}
+
+// tag list
+.tag-list {
+    ul {
+        padding: 0;
+        list-style: none;
+
+        li.tag {
+            float: left;
+            padding: @size-6;
+            
+            a {
+                font-size: 500;
+                font-size: @font-size-h6;
+            }
+        }
+    }
+}

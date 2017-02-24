@@ -1,0 +1,242 @@
+//
+// Variables
+// --------------------------------------------------
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+@gray:              		#5e5e5e;
+@gray-dark: 				#333333;
+@gray-bk:					#EEEEEE;
+@gray-border: 				#c9c9c9;
+
+@white:              		#FFFFFF;
+@black:              		#000000;
+@red: 						#E8134C;
+
+@primary:					#529c00;
+@secondary:					#d0b657;
+
+@facebook: 					#4C66A4;
+@twitter: 					#54ABEE;
+@google: 					#DD4B39;
+@instagram: 				#2e5e86;
+@pinterest: 				#ce2127;
+
+@success: 					#3f8913;
+@neutral: 					#1DA3BC;
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg:               @white;
+//** Global text color on `<body>`.
+@color-text:            @gray;
+
+
+//** Global textual link color.
+@link-color:            @primary;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 15%);
+//** Link hover decoration.
+@link-hover-decoration: none;
+
+
+@transparent-white: 		rgba(255, 255, 255, 0.7);
+@transparent-black: 		rgba(0, 0, 0, 0.45);
+@transparent-primary: 		rgba(58, 114, 95, 0.6);
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+@font-family-sans-serif:  		'Quicksand', Helvetica, Arial, sans-serif;
+
+@font-family:        			@font-family-sans-serif;
+@bold:							500;
+@thin:							300;
+
+
+@font-size:   					16px;
+@font-size-large:         		ceil((@font-size * 1.25)); // ~20px
+@font-size-medium:         		ceil((@font-size * 1.15)); // ~18px
+@font-size-small:         		ceil((@font-size * 0.87)); // ~14px
+
+@font-size-h1:            		floor((@font-size * 2.5)); // ~40px
+@font-size-h2:            		floor((@font-size * 2)); // ~32px
+@font-size-h3:            		ceil((@font-size * 1.5)); // ~24px
+@font-size-h4:            		ceil((@font-size * 1.25)); // ~20px
+@font-size-h5:            		@font-size; // ~16px
+@font-size-h6:            		ceil((@font-size * 0.8)); // ~13px
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height:        1.5; 
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size * @line-height)); // ~22px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    inherit;
+@headings-font-weight:    normal;
+@headings-line-height:    1.4;
+@headings-color:          @black;
+//** Headings small color
+@headings-small-color:        @color-text;
+
+//== Defaults
+@default-border: 				1px solid @gray-border;
+@default-border-radius: 		6px;
+@default-round: 				50%;
+@default-shadow:  				0 1px 2px rgba(0, 0, 0, 0.6);
+
+@full-size: 					100%; 
+@half-size: 					50%;
+@per-33-size: 					33.33%;
+@per-25-size: 					25%;
+@per-20-size: 					20%;
+@per-16-size: 					16.66%;
+@per-12-size: 					12.5%;
+
+
+//== Sizes
+@size-1: 						1px;
+@size-4: 						4px;
+@size-6: 						6px;
+@size-10: 						10px;
+@size-15: 						15px;
+@size-20: 						20px;
+@size-40: 						40px;
+@size-60: 						60px;
+
+//== Sizes Img
+@size-product-xl: 				600px;
+@size-carousel:                 550px;
+@size-product:                  500px;
+@size-cover-jiuvii:             400px;                   
+@size-store-banner:             350px;
+@size-cover:                    330px; 
+@size-loader-container:         230px;
+@size-product-thumb:            200px;
+@size-product-mini-thumb: 		@size-product-thumb;
+@size-category: 				150px;
+
+@size-img-xl: 					140px;
+@size-img-lg: 					100px;
+@size-img-md: 					60px;
+@size-img-sm: 					40px;
+
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+//** Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:         6px;
+
+
+//== Navbar
+// Basics of jiuvii navbar
+
+@navbar-selected-border: 						2px solid @primary;
+
+@navbar-jiuvii-height:                  		75px;
+@navbar-jiuvii-color:             				@color-text;
+@navbar-jiuvii-bg:                				@body-bg;
+@navbar-jiuvii-padding:     					0 20px;
+
+@navbar-sticky-height: 							50px;
+
+// Navbar links
+@navbar-jiuvii-link-color:                		#ff0033;
+@navbar-jiuvii-link-hover-color:          		#ff0033;
+@navbar-jiuvii-link-active-color:         		#ff0033;
+@navbar-jiuvii-link-disabled-color:       		#552277;
+
+
+
+//== Buttons
+@btn-font-size: 								@font-size;
+@btn-primary-color:              				@body-bg;
+@btn-primary-bg:                			 	@primary;
+@btn-primary-border:             				darken(@btn-primary-bg, 5%);
+
+@btn-primary-invert-color: 						@primary;
+@btn-primary-invert-bg: 						@body-bg;
+@btn-primary-invert-border:						@primary;
+@btn-primary-invert-hover: 						#DFF0D8;
+
+//== Badges
+@badge-color:                 					@body-bg;
+@badge-bg:                    					@red;
+@badge-line-height:           					19px;
+@badge-border-radius:        					50%;
+@badge-size: 			      					26px;
+
+//== Breadcrumb
+@breadcrumb-bg: 								@body-bg;
+@breadcrumb-color: 								@color-text;
+@breadcrumb-active-color: 						@black;
+@breadcrumb-margin: 							0;
+
+
+//== Thumbs
+@thumb-color: 								@black;				
+@thumb-color-hover:							@color-text;	
+@thumb-color-hover-opacity: 				0.9;	
+@thumb-border:								@default-border;
+@thumb-margin:								12px;
+@thumb-padding:								20px;
+@thumb-info-height:							130px;
+@thumb-font-lg-size: 						18px;
+
+@thumb-card-gutter: 						1px;
+
+//== Cover Thumbs
+@cover-thumb-card-width: 					@per-25-size;
+@cover-thumb-card-gutter: 					15px;
+@cover-thumb-info-height: 					70px;
+@cover-thumb-info-padding: 					12px 20px;
+@cover-thumb-info-hover: 					@secondary;
+@cover-thumb-info-hover-color: 				@white;
+
+//== Cards and Boxes
+@card-border: 								@default-border;
+@card-rounded-border-radius: 				@default-border-radius;
+
+@box-rounded-bg: 							@body-bg;
+@box-rounded-border:						@default-border;
+@box-rounded-border-radius: 				@default-border-radius;
+@box-rounded-padding: 						20px 30px;
+
+//== Tags
+@tag-margin: 								0 4px 10px;
+
+
+//== Modals
+
+//** Padding applied to the modal body
+@modal-inner-padding:         				15px 30px;
+
+
+//== Panels
+
+@panel-bg:                    				@body-bg;
+@panel-border-radius:         				0;
+
+@panel-primary-border: 						none; 
+@panel-primary-text: 						@white;
+@panel-primary-heading-bg: 					@primary; 
+
+
+//== Media queries breakpoints
+@screen-sm:                  				768px;
+@screen-md:                  				1024px;
+@screen-lg:                  				1280px;
+@screen-xl:                  				1400px;
+
+@screen-sm-min: 							@screen-sm;
+@screen-md-min: 							@screen-md;
+@screen-lg-min: 							@screen-lg;
+@screen-xl-min: 							@screen-xl;

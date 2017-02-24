@@ -1,0 +1,1361 @@
+<header>
+	<nav class="navbar navbar-fixed-top navbar-jiuvii primary-navbar navbar-default">
+		<div class="navbar-container">
+			<!-- logo -->
+			<div class="navbar-header">
+		      	<a class="navbar-brand" href="index.html">
+					<img src="assets/images/logo.png" alt="jiuvii.com">
+				</a>
+		    </div>
+
+		    <div class="navbar-inner">
+		      	<!-- nav left -->
+		      	<ul class="nav navbar-nav navbar-left">
+			        <li class="dropdown">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseCategoriesIndex" aria-expanded="true" aria-controls="collapseCategoriesIndex" class="collapsed">
+							Categorias <span class="caret"></span>
+						</a>
+					</li>     
+					<li class="dropdown">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseStoresIndexNav" aria-expanded="true" aria-controls="collapseStoresIndexNav" class="collapsed">
+							Tiendas <span class="caret"></span>
+						<!-- no agrego direccion -->
+						<div class="small">
+							Elige direccion
+						</div>
+						<!-- si agrego direccion -->
+						<div class="small hide">
+							Libertador 602, CABA
+						</div>
+						</a>
+					</li>       
+		      	</ul>
+
+				<!-- nav right -->
+		      	<ul class="nav navbar-nav navbar-right">
+					<!-- show open when not logged in or when logged in and does not have store-->
+					<li class="hide">
+						<a href="open.html">
+							Abri tu tienda
+						</a>
+					</li>
+					
+					<!-- show signin when not logged in -->
+					<li class="hide">
+						<a href="login.html">
+							Ingresar
+						</a>
+					</li>
+					
+					<!-- show register when not logged in -->
+					<li class="hide">
+						<a href="register.html">
+							Registrate
+						</a>
+					</li>
+
+					<!-- show location when logged in -->
+					<li>
+						<a data-toggle="modal" data-target="#userEditLocation">
+							<i class="fa fa-map-marker" aria-hidden="true"></i> 1001
+						</a>
+					</li>
+
+					<!-- show when logged in -->
+					<!-- sales -->
+					<li>
+						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							<span class="badge mini">12</span>
+							<i class="icon fa fa-shopping-bag" aria-hidden="true"></i>
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu nav-notification-container">
+							<!-- no content -->
+							<li class="media-no-content hide">
+								<div class="h3 text-center">
+						  			<p><i class="fa fa-shopping-bag fa-2x" aria-hidden="true"></i></p>
+									<span class="color-text">Aun no tienes Ventas</span>
+								</div>
+							</li>
+							<li class="media-header">
+								Ventas
+							</li>
+							<li class="media-title">
+								<h5>
+									Hoy
+								</h5>
+							</li>
+							<!-- sale resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a href="panel-store.html" title="Ver Venta">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-user.png" alt="username" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Juan Ignacio Gomez 
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			$250.00 ARS 
+									    		</span>
+									    		(cantidad 11)
+									    	</div>
+										    <div class="text-ellipsis">
+										    	<span class="color-positive">
+										    		Pagado (MercadoPago)
+										    	</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>
+							<!-- sale resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a href="panel-store.html" title="Ver Venta">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-user.png" alt="username" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Maria Ines Casares
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			$1365.99 ARS 
+									    		</span>
+									    		(cantidad 43)
+									    	</div>
+										    <div class="text-ellipsis">
+										    	<span class="color-neutral">Pendiente</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>
+							<li class="media-title">
+								<h5>
+									Ayer
+								</h5>
+							</li>
+							<!-- sale resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a href="panel-store.html" title="Ver Venta">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-user.png" alt="username" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Marta Basile
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			$2600.50 ARS 
+									    		</span>
+									    		(cantidad 101)
+									    	</div>
+										    <div class="text-ellipsis">
+										    	<span class="color-negative">Cancelada</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>		
+							<li class="media-title">
+								<h5>
+									Hace mas de 7 dias
+								</h5>
+							</li>
+							<!-- sale resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a href="panel-store.html" title="Ver Venta">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-user.png" alt="username" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Juan Ignacio Gomez 
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			$250.00 ARS 
+									    		</span>
+									    		(cantidad 11)
+									    	</div>
+										    <div class="text-ellipsis">
+										    	<span class="color-positive">
+										    		Pagado (MercadoPago)
+										    	</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>
+							<!-- sale resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a href="panel-store.html" title="Ver Venta">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-user.png" alt="username" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Juan Ignacio Gomez 
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			$250.00 ARS 
+									    		</span>
+									    		(cantidad 11)
+									    	</div>
+										    <div class="text-ellipsis">
+										    	<span class="color-positive">
+										    		Pagado (MercadoPago)
+										    	</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>
+							<!-- sale resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a href="panel-store.html" title="Ver Venta">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-user.png" alt="username" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Juan Ignacio Gomez 
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			$250.00 ARS 
+									    		</span>
+									    		(cantidad 11)
+									    	</div>
+										    <div class="text-ellipsis">
+										    	<span class="color-positive">
+										    		Pagado (MercadoPago)
+										    	</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>
+							<!-- sale resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a href="panel-store.html" title="Ver Venta">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-user.png" alt="username" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Juan Ignacio Gomez 
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			$250.00 ARS 
+									    		</span>
+									    		(cantidad 11)
+									    	</div>
+										    <div class="text-ellipsis">
+										    	<span class="color-positive">
+										    		Pagado (MercadoPago)
+										    	</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>
+							<!-- sale resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a href="panel-store.html" title="Ver Venta">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-user.png" alt="username" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Maria Ines Casares
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			$1365.99 ARS 
+									    		</span>
+									    		(cantidad 43)
+									    	</div>
+										    <div class="text-ellipsis">
+										    	<span class="color-neutral">Pendiente</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>				
+							<li class="text-center">
+								<a href="panel-store.html">
+									Ver todas las ventas
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- messages -->
+					<li>
+						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							<span class="badge mini">03</span>
+							<i class="icon fa fa-envelope-o" aria-hidden="true"></i>
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu nav-notification-container">
+							<!-- no content -->
+							<li class="media-no-content hide">
+								<div class="h3 text-center">
+						  			<p><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></p>
+									<span class="color-text">Aun no tienes Mensajes</span>
+								</div>
+							</li>
+							<li class="media-header">
+								Mensajes
+							</li>
+							<li class="media-title">
+								<h5>
+									Hoy
+								</h5>
+							</li>
+							<!-- message resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a data-toggle="modal" data-target="#chatMessage">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-store.png" alt="" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Wholefoods
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail
+									    		</span>
+									    	</div>
+									    	<div class="text-ellipsis">
+										    	<span>
+										    		Mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mails
+										    	</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>
+							<!-- message resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a data-toggle="modal" data-target="#chatMessage">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-user.png" alt="" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Maria Ines Casares
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail
+									    		</span>
+									    	</div>
+									    	<div class="text-ellipsis">
+										    	<span>
+										    		Mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mails
+										    	</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>
+							<li class="media-title">
+								<h5>
+									Hace 3 dias
+								</h5>
+							</li>
+							<!-- message resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a data-toggle="modal" data-target="#chatMessage">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-user.png" alt="" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Maria Ines Casares
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail
+									    		</span>
+									    	</div>
+									    	<div class="text-ellipsis">
+										    	<span>
+										    		Mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mails
+										    	</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>
+							<li class="media-title">
+								<h5>
+									Hace mas de 7 dias
+								</h5>
+							</li>
+							<!-- message resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a data-toggle="modal" data-target="#chatMessage">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-user.png" alt="" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Maria Ines Casares
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail
+									    		</span>
+									    	</div>
+									    	<div class="text-ellipsis">
+										    	<span>
+										    		Mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mails
+										    	</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>
+							<!-- message resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a data-toggle="modal" data-target="#chatMessage">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-user.png" alt="" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Maria Ines Casares
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail
+									    		</span>
+									    	</div>
+									    	<div class="text-ellipsis">
+										    	<span>
+										    		Mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mails
+										    	</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>
+							<!-- message resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a data-toggle="modal" data-target="#chatMessage">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-user.png" alt="" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Maria Ines Casares
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail
+									    		</span>
+									    	</div>
+									    	<div class="text-ellipsis">
+										    	<span>
+										    		Mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mails
+										    	</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>
+							<!-- message resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a data-toggle="modal" data-target="#chatMessage">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-user.png" alt="" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Maria Ines Casares
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail
+									    		</span>
+									    	</div>
+									    	<div class="text-ellipsis">
+										    	<span>
+										    		Mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mails
+										    	</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>
+							<!-- message resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a data-toggle="modal" data-target="#chatMessage">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-user.png" alt="" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Maria Ines Casares
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail
+									    		</span>
+									    	</div>
+									    	<div class="text-ellipsis">
+										    	<span>
+										    		Mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mails
+										    	</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>
+							<!-- message resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a data-toggle="modal" data-target="#chatMessage">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-user.png" alt="" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Maria Ines Casares
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail
+									    		</span>
+									    	</div>
+									    	<div class="text-ellipsis">
+										    	<span>
+										    		Mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mails
+										    	</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>
+							<!-- message resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a data-toggle="modal" data-target="#chatMessage">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-user.png" alt="" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Maria Ines Casares
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail
+									    		</span>
+									    	</div>
+									    	<div class="text-ellipsis">
+										    	<span>
+										    		Mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mails
+										    	</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>
+							<!-- message resume -->
+							<li class="media">
+							    <div class="media-content">
+								    <a data-toggle="modal" data-target="#chatMessage">
+									  	<div class="media-left media-middle">
+									      	<img src="assets/images/default/default-user.png" alt="" class="media-object avatar">
+									  	</div>
+									  	<div class="media-body">
+									    	<div class="text-ellipsis">
+										    	Maria Ines Casares
+										    </div>
+									    	<div class="text-ellipsis">
+									    		<span class="h5 media-heading bold">	
+									    			Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail Titulo del Mail
+									    		</span>
+									    	</div>
+									    	<div class="text-ellipsis">
+										    	<span>
+										    		Mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mail, mensaje del mails
+										    	</span>
+										    </div>
+									  	</div>
+								    </a>
+							    </div>
+							</li>
+							<li class="text-center">
+								<a href="mail.html">
+									Ver todos los mensajes
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- user/store -->
+					<li class="dropdown nav-user">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							<img src="assets/images/default/default-user.png" alt="" class="avatar">
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a class="h4" href="user.html">
+									Hola Username!
+								</a>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li>
+								<a href="panel-user.html">
+									<i class="fa fa-tachometer" aria-hidden="true"></i>
+									Panel de Usuario
+								</a>
+							</li>
+							<li>
+								<a href="panel-user.html">
+									<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+									Compras
+								</a>
+							</li>
+							<li>
+								<a href="panel-user.html">
+									<i class="fa fa-cog" aria-hidden="true"></i>
+									Cuenta
+								</a>
+							</li>
+							
+							<!-- show when logged in and has store -->
+							<li role="separator" class="divider"></li>
+							<li>
+								<a class="h4" href="store.html">
+									Hola Storename!
+								</a>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li>
+								<a href="panel-store.html">
+									<i class="fa fa-tachometer" aria-hidden="true"></i>
+									Panel de Tienda
+								</a>
+							</li>
+							<li>
+								<a href="panel-store.html">
+									<i class="fa fa-tags" aria-hidden="true"></i>
+									Publicaciones
+								</a>
+							</li>
+							<li>
+								<a href="panel-store.html">
+									<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+									Ventas
+								</a>
+							</li>
+							<li>
+								<a href="panel-store.html">
+									<i class="fa fa-money" aria-hidden="true"></i>
+									Pagos
+								</a>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li><a href="open.html">Abrir una Tienda</a></li>
+							<li><a href="open.html">Abrir otra Tienda</a></li>
+							<li role="separator" class="divider"></li>
+							<li>
+								<a href="goodbye.html">
+									<i class="fa fa-sign-out" aria-hidden="true"></i>
+									Salir
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- mobile -->
+					<li class="dropdown mobile-nav-user">
+						<a href="mobile-user.html">
+							<img src="assets/images/default/default-user.png" alt="" class="avatar">
+						</a>
+					</li>
+
+					<!-- cart -->
+					<li class="nav-cart">
+						<a data-toggle="collapse" data-target="#cartPreview">
+							<span class="badge">12</span>
+							<i class="icon fa fa-shopping-cart" aria-hidden="true"></i>
+						</a>
+					</li>
+		      	</ul>
+		      	
+		      	<!-- mobile nav right -->
+				<ul class="mobile-nav-right">
+					<!-- show signin when not logged in -->
+					<li>
+						<a href="login.html">
+							Ingresar
+						</a>
+					</li>
+
+					<li class="dropdown mobile-nav-user">
+						<a href="mobile-user.html">
+							<!-- show when has notifications -->
+							<i class="fa fa-circle notification" aria-hidden="true"></i>
+							<img src="assets/images/default/default-user.png" alt="" class="avatar">
+						</a>
+					</li>
+
+					<!-- cart -->
+					<li>
+						<a class="btn btn-default" data-toggle="collapse" data-target="#cartPreview">
+							<span class="badge">10</span>
+							<i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+
+				<!-- cart item added box -->
+				<div class="cart_arrow_box hide">
+					<ul class="list-unstyled nav-pills">
+						<li class="h4">
+							1
+						</li>
+						<li>
+							<img src="https://s3-us-west-2.amazonaws.com/mercadoni/live/undefined/big_palta.jpg" class="margin-right margin-left">
+						</li>
+						<li>
+							<h5>
+								Palta Hass Elegida
+								<br/>
+								<small>
+									x Unidad
+								</small> 	
+							</h5>
+						</li>
+					</ul>
+				</div>
+
+				<!-- cart Preview -->
+			  	<div id="cartPreview" class="collapse cart" 
+			  		style="color: #7a7a7a; position: absolute; right: 0; top: 75px; background-color: white; height: 100vh; min-height: 100vh; border-left: 1px solid #c9c9c9; z-index: 2;">
+		        	<div id="includeCart"></div>
+		      	</div>
+
+				<!-- search -->
+		      	<ul class="nav navbar-nav navbar-middle nav-search">
+			    	<div class="search-container">
+		    			<form class="search-form" role="search">
+		    			<div class="input-group">
+					    	<input type="text" class="form-control input-lg" placeholder="Buscar en Jiuvii">
+					      		<span class="input-group-btn">
+					        		<a class="btn btn-default" href="results.html">
+					        			<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+					        		</a>
+					      		</span>
+					    	</div>
+		    			</form>
+		    		</div>
+			  	</ul>
+		    </div>
+	    </div>
+
+	    <!-- categories index -->
+		<div id="collapseCategoriesIndex" class="panel-collapse collapse category-index-nav-container" role="tabpanel" aria-labelledby="collapseCategoriesIndex" style="height: auto;">
+			<section class="category-index-nav-content">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<h3>
+							Conoce todas 
+							<span class="bold">
+								nuestras Categorias
+							</span>
+						</h3>
+					</div>
+				</div>
+				<!-- categories carousel -->
+				<div class="categories-carousel-container margin">
+					<div id="home-carousel" class="owl-carousel owl-carousel-navCategories owl-theme">
+						<!-- item -->
+						<div class="item">
+							<a href="results-category.html">
+								<figure style="background-image:url('assets/images/products/category/category-milk.jpg')" class="image-loader-container image-loader-category-carousel">
+									<img style="visibility: hidden" src="assets/images/products/category/category-milk.jpg" alt="CategoryName" name="CategoryName">
+								</figure>
+								<figcaption class="text-ellipsis small">Lacteos</figcaption>
+							</a>
+						</div>
+						<!-- item -->
+						<div class="item">
+							<a href="results-category.html">
+								<figure style="background-image:url('assets/images/products/category/category-fruit.jpg')" class="image-loader-container image-loader-category-carousel">
+									<img style="visibility: hidden" src="assets/images/products/category/category-fruit.jpg" alt="CategoryName" name="CategoryName">
+								</figure>
+								<figcaption class="text-ellipsis small">Frutas y Verduras</figcaption>
+							</a>
+						</div>
+						<!-- item -->
+						<div class="item">
+							<a href="results-category.html">
+								<figure style="background-image:url('assets/images/products/category/category-milk.jpg')" class="image-loader-container image-loader-category-carousel">
+									<img style="visibility: hidden" src="assets/images/products/category/category-milk.jpg" alt="CategoryName" name="CategoryName">
+								</figure>
+								<figcaption class="text-ellipsis small">Lacteos</figcaption>
+							</a>
+						</div>
+						<!-- item -->
+						<div class="item">
+							<a href="results-category.html">
+								<figure style="background-image:url('assets/images/products/category/category-bread.jpg')" class="image-loader-container image-loader-category-carousel">
+									<img style="visibility: hidden" src="assets/images/products/category/category-bread.jpg" alt="CategoryName" name="CategoryName">
+								</figure>
+								<figcaption class="text-ellipsis small">Panadería y Repostería</figcaption>
+							</a>
+						</div>
+						<!-- item -->
+						<div class="item">
+							<a href="results-category.html">
+								<figure style="background-image:url('assets/images/products/category/category-deli.jpg')" class="image-loader-container image-loader-category-carousel">
+									<img style="visibility: hidden" src="assets/images/products/category/category-deli.jpg" alt="CategoryName" name="CategoryName">
+								</figure>
+								<figcaption class="text-ellipsis small">Deli</figcaption>
+							</a>
+						</div>
+						<!-- item -->
+						<div class="item">
+							<a href="results-category.html">
+								<figure style="background-image:url('assets/images/products/category/category-fruit.jpg')" class="image-loader-container image-loader-category-carousel">
+									<img style="visibility: hidden" src="assets/images/products/category/category-fruit.jpg" alt="CategoryName" name="CategoryName">
+								</figure>
+								<figcaption class="text-ellipsis small">Frutas y Verduras</figcaption>
+							</a>
+						</div>
+						<!-- item -->
+						<div class="item">
+							<a href="results-category.html">
+								<figure style="background-image:url('assets/images/products/category/category-milk.jpg')" class="image-loader-container image-loader-category-carousel">
+									<img style="visibility: hidden" src="assets/images/products/category/category-milk.jpg" alt="CategoryName" name="CategoryName">
+								</figure>
+								<figcaption class="text-ellipsis small">Lacteos</figcaption>
+							</a>
+						</div>
+						<!-- item -->
+						<div class="item">
+							<a href="results-category.html">
+								<figure style="background-image:url('assets/images/products/category/category-bread.jpg')" class="image-loader-container image-loader-category-carousel">
+									<img style="visibility: hidden" src="assets/images/products/category/category-bread.jpg" alt="CategoryName" name="CategoryName">
+								</figure>
+								<figcaption class="text-ellipsis small">Panadería y Repostería</figcaption>
+							</a>
+						</div>
+						<!-- item -->
+						<div class="item">
+							<a href="results-category.html">
+								<figure style="background-image:url('assets/images/products/category/category-deli.jpg')" class="image-loader-container image-loader-category-carousel">
+									<img style="visibility: hidden" src="assets/images/products/category/category-deli.jpg" alt="CategoryName" name="CategoryName">
+								</figure>
+								<figcaption class="text-ellipsis small">Deli</figcaption>
+							</a>
+						</div>
+						<!-- item -->
+						<div class="item">
+							<a href="results-category.html">
+								<figure style="background-image:url('assets/images/products/category/category-fruit.jpg')" class="image-loader-container image-loader-category-carousel">
+									<img style="visibility: hidden" src="assets/images/products/category/category-fruit.jpg" alt="CategoryName" name="CategoryName">
+								</figure>
+								<figcaption class="text-ellipsis small">Frutas y Verduras</figcaption>
+							</a>
+						</div>
+						<!-- item -->
+						<div class="item">
+							<a href="results-category.html">
+								<figure style="background-image:url('assets/images/products/category/category-milk.jpg')" class="image-loader-container image-loader-category-carousel">
+									<img style="visibility: hidden" src="assets/images/products/category/category-milk.jpg" alt="CategoryName" name="CategoryName">
+								</figure>
+								<figcaption class="text-ellipsis small">Lacteos</figcaption>
+							</a>
+						</div>
+						<!-- item -->
+						<div class="item">
+							<a href="results-category.html">
+								<figure style="background-image:url('assets/images/products/category/kosher.png')" class="image-loader-container image-loader-category-carousel">
+									<img style="visibility: hidden" src="assets/images/products/category/kosher.png" alt="CategoryName" name="CategoryName">
+								</figure>
+								<figcaption class="text-ellipsis small">Kosher</figcaption>
+							</a>
+						</div>
+						<!-- item -->
+						<div class="item">
+							<a href="results-category.html">
+								<figure style="background-image:url('assets/images/products/category/natural.jpg')" class="image-loader-container image-loader-category-carousel">
+									<img style="visibility: hidden" src="assets/images/products/category/natural.jpg" alt="CategoryName" name="CategoryName">
+								</figure>
+								<figcaption class="text-ellipsis small">Natural</figcaption>
+							</a>
+						</div>
+						<!-- item -->
+						<div class="item">
+							<a href="results-category.html">
+								<figure style="background-image:url('assets/images/products/category/organico.jpg')" class="image-loader-container image-loader-category-carousel">
+									<img style="visibility: hidden" src="assets/images/products/category/organico.jpg" alt="CategoryName" name="CategoryName">
+								</figure>
+								<figcaption class="text-ellipsis small">Organico</figcaption>
+							</a>
+						</div>
+						<!-- item -->
+						<div class="item">
+							<a href="results-category.html">
+								<figure style="background-image:url('assets/images/products/category/sinTacc.jpg')" class="image-loader-container image-loader-category-carousel">
+									<img style="visibility: hidden" src="assets/images/products/category/sinTacc.jpg" alt="CategoryName" name="CategoryName">
+								</figure>
+								<figcaption class="text-ellipsis small">Sin Tacc</figcaption>
+							</a>
+						</div>
+						<!-- item -->
+						<div class="item">
+							<a href="results-category.html">
+								<figure style="background-image:url('assets/images/products/category/vegano.jpg')" class="image-loader-container image-loader-category-carousel">
+									<img style="visibility: hidden" src="assets/images/products/category/vegano.jpg" alt="CategoryName" name="CategoryName">
+								</figure>
+								<figcaption class="text-ellipsis small">Vegano</figcaption>
+							</a>
+						</div>
+						<!-- item -->
+						<div class="item">
+							<a href="results-category.html">
+								<figure style="background-image:url('assets/images/products/category/vegetariano.jpg')" class="image-loader-container image-loader-category-carousel">
+									<img style="visibility: hidden" src="assets/images/products/category/vegetariano.jpg" alt="CategoryName" name="CategoryName">
+								</figure>
+								<figcaption class="text-ellipsis small">Vegetariano</figcaption>
+							</a>
+						</div>
+                    </div>
+                </div>
+			</section>
+		</div>
+
+		<!-- stores index -->
+		<div id="collapseStoresIndexNav" class="panel-collapse collapse stores-index-nav-container" role="tabpanel" aria-labelledby="headingStoresIndexNav" style="height: auto;">
+			<div class="row">
+				<div class="col-xs-12">
+					<!-- direccion si ingresada -->
+					<div class="stores-index-nav-header text-center hide">
+						<h3>
+							<span class="color-black">
+								Elige una tienda con envio a Av. del Libertador 6024, C1428ARQ CABA, Argentina
+							</span>
+						</h3>
+						<h4>
+							<a data-toggle="modal" data-target="#userEditLocation">
+								<i class="fa fa-map-marker" aria-hidden="true"></i> Cambiar dirección
+							</a>
+						</h4>
+					</div>
+					<!-- direccion no ingresada -->
+					<div class="stores-index-nav-header text-center margin">
+						<h4>
+							<a data-toggle="modal" data-target="#userEditLocation">
+								<i class="fa fa-map-marker" aria-hidden="true"></i> Elige una direccion de entrega para ver las tiendas mas cercanas
+							</a>
+						</h4>
+					</div>
+					
+				</div>
+			</div>
+			<section class="stores-index-nav-content">
+				<div class="row">
+					<!-- store resume-->
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+						<article class="store-index-nav-box">
+							<div class="media">
+							  	<div class="media-left">
+							    	<a href="store.html">
+							      		<img class="media-object" src="assets/images/default/default-store.png" alt="Storename">
+							    	</a>
+							  	</div>
+							  	<div class="media-body">
+							    	<h4 class="media-heading">
+							    		<a href="store.html">
+							    			Whole Foods Market
+							    		</a>
+							    	</h4>
+									<div class="store-nutrition">
+										<ul class="store-type text-ellipsis">
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Natural
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Sin Tacc
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Organico
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Natural
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Sin Tacc
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Organico
+											</li>
+										</ul>
+							  		</div>
+							  		<div class="text-ellipsis">
+										<i class="fa fa-check-circle fa-lg color-positive" aria-hidden="true"></i>
+										Mismos precios que en la tienda Mismos precios que en la tiendaMismos precios que en la tienda Mismos precios que en la tienda
+									</div>
+									<div class="text-ellipsis">
+										<i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+										Disponible en 2 horas
+									</div>
+									<div class="text-ellipsis">
+										<i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+										1.5 kilometros
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+					<!-- store resume-->
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+						<article class="store-index-nav-box">
+							<div class="media">
+							  	<div class="media-left">
+							    	<a href="store.html">
+							      		<img class="media-object" src="assets/images/default/default-store.png" alt="Storename">
+							    	</a>
+							  	</div>
+							  	<div class="media-body">
+							    	<h4 class="media-heading">
+							    		<a href="store.html">
+							    			Whole Foods Market
+							    		</a>
+							    	</h4>
+									<div class="store-nutrition">
+										<ul class="store-type text-ellipsis">
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Natural
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Sin Tacc
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Organico
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Natural
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Sin Tacc
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Organico
+											</li>
+										</ul>
+							  		</div>
+							  		<div class="text-ellipsis">
+										<i class="fa fa-check-circle fa-lg color-positive" aria-hidden="true"></i>
+										Mismos precios que en la tienda Mismos precios que en la tiendaMismos precios que en la tienda Mismos precios que en la tienda
+									</div>
+									<div class="text-ellipsis">
+										<i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+										Disponible en 2 horas
+									</div>
+									<div class="text-ellipsis">
+										<i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+										1.5 kilometros
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+					<!-- store resume-->
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+						<article class="store-index-nav-box">
+							<div class="media">
+							  	<div class="media-left">
+							    	<a href="store.html">
+							      		<img class="media-object" src="assets/images/default/default-store.png" alt="Storename">
+							    	</a>
+							  	</div>
+							  	<div class="media-body">
+							    	<h4 class="media-heading">
+							    		<a href="store.html">
+							    			Whole Foods Market
+							    		</a>
+							    	</h4>
+									<div class="store-nutrition">
+										<ul class="store-type text-ellipsis">
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Natural
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Sin Tacc
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Organico
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Natural
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Sin Tacc
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Organico
+											</li>
+										</ul>
+							  		</div>
+							  		<div class="text-ellipsis">
+										<i class="fa fa-check-circle fa-lg color-positive" aria-hidden="true"></i>
+										Mismos precios que en la tienda Mismos precios que en la tiendaMismos precios que en la tienda Mismos precios que en la tienda
+									</div>
+									<div class="text-ellipsis">
+										<i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+										Disponible en 2 horas
+									</div>
+									<div class="text-ellipsis">
+										<i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+										1.5 kilometros
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+					<!-- store resume-->
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+						<article class="store-index-nav-box">
+							<div class="media">
+							  	<div class="media-left">
+							    	<a href="store.html">
+							      		<img class="media-object" src="assets/images/default/default-store.png" alt="Storename">
+							    	</a>
+							  	</div>
+							  	<div class="media-body">
+							    	<h4 class="media-heading">
+							    		<a href="store.html">
+							    			Whole Foods Market
+							    		</a>
+							    	</h4>
+									<div class="store-nutrition">
+										<ul class="store-type text-ellipsis">
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Natural
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Sin Tacc
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Organico
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Natural
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Sin Tacc
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Organico
+											</li>
+										</ul>
+							  		</div>
+							  		<div class="text-ellipsis">
+										<i class="fa fa-check-circle fa-lg color-positive" aria-hidden="true"></i>
+										Mismos precios que en la tienda Mismos precios que en la tiendaMismos precios que en la tienda Mismos precios que en la tienda
+									</div>
+									<div class="text-ellipsis">
+										<i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+										Disponible en 2 horas
+									</div>
+									<div class="text-ellipsis">
+										<i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+										1.5 kilometros
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+					<!-- store resume-->
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+						<article class="store-index-nav-box">
+							<div class="media">
+							  	<div class="media-left">
+							    	<a href="store.html">
+							      		<img class="media-object" src="assets/images/default/default-store.png" alt="Storename">
+							    	</a>
+							  	</div>
+							  	<div class="media-body">
+							    	<h4 class="media-heading">
+							    		<a href="store.html">
+							    			Whole Foods Market
+							    		</a>
+							    	</h4>
+									<div class="store-nutrition">
+										<ul class="store-type text-ellipsis">
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Natural
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Sin Tacc
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Organico
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Natural
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Sin Tacc
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Organico
+											</li>
+										</ul>
+							  		</div>
+							  		<div class="text-ellipsis">
+										<i class="fa fa-check-circle fa-lg color-positive" aria-hidden="true"></i>
+										Mismos precios que en la tienda Mismos precios que en la tiendaMismos precios que en la tienda Mismos precios que en la tienda
+									</div>
+									<div class="text-ellipsis">
+										<i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+										Disponible en 2 horas
+									</div>
+									<div class="text-ellipsis">
+										<i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+										1.5 kilometros
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+					<!-- store resume-->
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+						<article class="store-index-nav-box">
+							<div class="media">
+							  	<div class="media-left">
+							    	<a href="store.html">
+							      		<img class="media-object" src="assets/images/default/default-store.png" alt="Storename">
+							    	</a>
+							  	</div>
+							  	<div class="media-body">
+							    	<h4 class="media-heading">
+							    		<a href="store.html">
+							    			Whole Foods Market
+							    		</a>
+							    	</h4>
+									<div class="store-nutrition">
+										<ul class="store-type text-ellipsis">
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Natural
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Sin Tacc
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Organico
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Natural
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Sin Tacc
+											</li>
+											<li>
+												<i class="fa fa-leaf fa-lg color-natural" aria-hidden="true"></i>
+												Organico
+											</li>
+										</ul>
+							  		</div>
+							  		<div class="text-ellipsis">
+										<i class="fa fa-check-circle fa-lg color-positive" aria-hidden="true"></i>
+										Mismos precios que en la tienda Mismos precios que en la tiendaMismos precios que en la tienda Mismos precios que en la tienda
+									</div>
+									<div class="text-ellipsis">
+										<i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+										Disponible en 2 horas
+									</div>
+									<div class="text-ellipsis">
+										<i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+										1.5 kilometros
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</div>
+	</nav>
+</header>
+<script>
+    $('.owl-carousel-navCategories').owlCarousel({
+        loop:true,
+        margin: 6,
+        responsive: {
+	        768:{ items:9 },
+	        1024:{ items:9 },
+	        1280:{ items:15 },
+	    }
+    })
+</script>

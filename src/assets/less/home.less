@@ -1,0 +1,230 @@
+//
+// Home
+// --------------------------------------------------
+
+///// carousel
+.carousel {
+    position: relative;
+    width: @full-size;
+
+    // carousel nav 
+    .carousel-nav {
+        background: @transparent-primary;
+        bottom: 0;
+        position: absolute;
+        width: @full-size;
+        padding: @size-20;
+        color: @white;
+        text-transform: uppercase;
+        text-shadow: @default-shadow;
+
+        a {
+            color: @white;
+            font-weight: bold;
+
+            &:hover,
+            &:focus {
+                color: @secondary;
+                text-decoration: none;
+            }
+        }
+
+        .carousel-nav-section {
+
+            > div {
+                display: inline-block;
+                margin: 0 @size-10;
+            }
+            
+            a.active {
+                color: @secondary;
+            }
+            
+            .carousel-nav-title {
+                color: lighten(@secondary, 10%);
+            }
+        }
+    }
+}
+
+///// home
+.home-container {
+    margin-top: @size-40;
+}
+
+///// cover thumbs
+.cover-thumbs-container {
+    width: @full-size;
+    position: relative;
+
+    .cover-thumb-card {
+        float: left;
+        padding: @cover-thumb-card-gutter;
+
+        .cover-thumb {
+            position: relative;
+            width: @full-size;
+            left: @size-15;
+
+            &:hover,
+            &:focus {
+                box-shadow: @default-shadow;
+            }
+
+            .cover-thumb-image-container {
+                border: @default-border;
+
+                &:hover,
+                &:focus {
+                    opacity: @thumb-color-hover-opacity;
+                }
+            }
+            
+            &:hover .cover-thumb-image-info,
+            &:focus .cover-thumb-image-info {
+                background-color: @cover-thumb-info-hover;
+                
+            } 
+            
+            &:hover .title,
+            &:hover .title .color-text {
+                color: white;
+            }
+
+            .cover-thumb-image-info {
+                padding: @cover-thumb-info-padding;
+                height: @cover-thumb-info-height;
+            }
+        }
+
+        .cover-thumb-image-tag {
+            background: @transparent-primary;
+            color: @white;
+            max-width: 75%;
+            padding: @size-10 @size-20;
+            position: absolute;
+            right: 0;
+            text-transform: uppercase;
+            z-index: 1;
+            font-weight: @bold;
+            text-shadow: @default-shadow;
+        }
+    }
+
+    // responsive
+    /* Extra small devices (phones, less than 768px) */
+    @media (min-width: 320px) and (max-width: 767px) {  
+        .cover-thumb-card {
+            width: @full-size !important;
+        }
+    }
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: @screen-sm-min) { 
+        .cover-thumb-card {
+            width: @half-size !important;
+        }
+    }
+
+    /* Medium devices (desktops, 1024 and up) */
+    @media (min-width: @screen-md-min) { 
+        .cover-thumb-card {
+            width: @half-size !important;
+        }
+    }
+
+    /* Large devices (large desktops, 1280px and up) */
+    @media (min-width: @screen-lg-min) { 
+         .cover-thumb-card {
+            width: @per-33-size !important;
+        }
+    }
+
+    /* Extra Large devices (large desktops, 1920px and up) */
+    @media (min-width: @screen-xl-min) { 
+         .cover-thumb-card {
+            width: @cover-thumb-card-width !important;
+        }
+    }
+}
+
+// LOAD MORE THUMBS 
+.load-more::before {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.load-more, 
+.load-more::before {
+    height: 120px;
+    width: 120px;
+    border-color: @primary;
+}
+
+.load-more {
+    -moz-box-pack: center;
+    justify-content: center;
+    margin: @size-20 auto 0;
+    position: relative;
+}
+
+.load {
+    display: block;
+    font-weight: @bold;
+    padding: 52px 9px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 1;
+    color: @primary;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: @primary;
+    }
+}
+
+.subscribe {
+    
+    .subscribe-container {
+        width: @full-size;
+        position: relative;
+        
+        .subscribe-text {
+            position: absolute;
+            z-index: 1;
+            background: @white;
+            border: @default-border;
+            border-radius: @default-border-radius;
+            left: @per-25-size;
+            padding: 0 @size-40 @size-20;
+            position: absolute;
+            top: 8%;
+            width: @half-size;
+            z-index: 1;
+
+            .social .icon {
+                color: @white;
+            }
+        }
+        
+        .subscribe-bk {
+            .subscribe-bk-img {
+                margin: 0 !important;
+                padding: 0 !important;
+
+                &:hover,
+                &:focus {
+                    opacity: @thumb-color-hover-opacity;
+                }
+            }
+        }
+    }
+}

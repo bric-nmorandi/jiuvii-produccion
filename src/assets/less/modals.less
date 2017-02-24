@@ -1,0 +1,81 @@
+//
+// Modals
+// --------------------------------------------------
+.modal-header {
+    background-color: @btn-primary-invert-hover;
+    border-radius: @default-border-radius @default-border-radius 0 0; 
+}
+
+#productView,
+#deliverySchedule {
+    .modal-header {
+        background-color: @white;
+    }
+}
+
+// Modal title
+.modal-title {
+    color: @color-text;
+    
+    img {
+        width: @size-60;
+        height: @size-60;
+        border-radius: @default-round;
+        border: @default-border;
+    }
+} 
+  
+
+// Modal body
+// Where all modal content resides (sibling of .modal-header and .modal-footer)
+.modal-body {
+  position: relative;
+  padding: @modal-inner-padding;
+  max-height: 600px;
+  overflow: auto;
+
+    & > div:last-child {
+        margin-bottom: @size-40;
+    }
+
+    ul li {
+        padding: @size-6;
+    }
+
+    .rate-purchase-step-04 img,
+    .rate-sale-step-04 img {
+        border-radius: @default-round;
+        border: @default-border;
+        width: @size-img-xl;
+        height: @size-img-xl;
+    }
+}
+
+#productZoom {
+    .modal-body {
+        padding: 0;
+        max-height: none;
+    }
+}
+
+.modal-logo-header {
+	background-color: @white;
+    border-bottom: @default-border;
+    border-radius: @default-border-radius @default-border-radius 0 0;
+    height: 100px;
+    margin-bottom: @size-20;
+    padding: @size-10;
+    position: relative;
+    width: @full-size;
+
+    img {
+    	height: @full-size;
+    	width: auto;
+    	border: @default-border;
+    	border-radius: @default-round;
+    }
+}
+
+.republish-promo-code {
+    width: 50%;
+}

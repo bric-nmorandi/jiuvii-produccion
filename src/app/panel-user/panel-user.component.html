@@ -1,0 +1,1987 @@
+<!-- HEADER -->
+<nav-primary></nav-primary>
+
+<!-- CONTENT -->
+	<main class="container dashboard">
+		<!-- header -->
+		<header class="page-header">
+			<div class="row">
+				<!-- store -->
+				<div class="col-md-3 col-lg-3">
+					<h2 style="margin:0">
+						Panel de Brenda
+					</h2>
+				</div>
+				<!-- panel date range -->
+				<div class="col-md-9 col-lg-9">
+					<div class="dropdown">
+					  <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					    Seleccionar Fecha
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    <li><a href="#">Hoy</a></li>
+					    <li><a href="#">Ayer</a></li>
+					    <li><a href="#">Ultimos 7 Dias</a></li>
+						<li><a href="#">Ultimos 30 Dias</a></li>
+						<li><a href="#">Este Mes</a></li>
+					    <li><a href="#">Mes Pasado</a></li>
+					    <li><a href="#">Todos</a></li>
+					  </ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- content -->
+		<div class="row">
+			<!-- panel menu -->
+			<div class="panel-menu">
+				<div class="col-md-3 col-lg-3">
+					<div class="list-group">
+						<a class="list-group-item show-user-panel">
+							<i class="fa fa-tachometer fa-lg" aria-hidden="true"></i>
+							Panel de Perfil
+							<span class="pull-right">
+								<i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+							</span>
+						</a>
+						<a class="list-group-item show-user-account">
+							<i class="fa fa-user fa-lg" aria-hidden="true"></i>
+							Cuenta
+							<span class="pull-right">
+								<i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+							</span>
+						</a>
+					  	<a class="list-group-item show-user-purchases">
+					  		<i class="fa fa-shopping-bag fa-lg" aria-hidden="true"></i>
+					  		Compras
+					  		<span class="color-red small">
+					  			<i class="fa fa-circle" aria-hidden="true"></i>
+					  		</span>
+					  		<span class="pull-right">
+								<i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+							</span>
+					  	</a>
+					  	<a class="list-group-item show-user-rate" data-toggle="modal" data-target="#UserRateAlert">
+					  		<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+					  		Valoraciones
+					  		<span class="pull-right">
+								<i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+							</span>
+					  	</a>
+					  	<a class="list-group-item show-user-address">
+					  		<i class="fa fa-map-marker  fa-lg" aria-hidden="true"></i>
+					  		Direcciones
+					  		<span class="pull-right">
+								<i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+							</span>
+					  	</a>
+					  	<a class="list-group-item show-user-settings">
+					  		<i class="fa fa-cog fa-lg" aria-hidden="true"></i>
+					  		Configuracion
+					  		<span class="pull-right">
+								<i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+							</span>
+					  	</a>
+					</div>
+				</div>
+			</div>
+			<!-- panel detail -->
+			<div class="panel-detail">
+				<div class="col-md-9 col-lg-9">
+					<!-- panel -->
+					<div class="user-panel">
+
+						<div class="panel-resume-container">
+							<div class="row">
+								<!-- panel resume box -->
+								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+									<article class="panel-resume-content" alt="Ver Compras">
+										<a class="show-user-purchases">
+											<div class="panel-header uppercase text-ellipsis">
+												Compras
+												<div class="count bold">
+													19
+												</div>
+											</div>
+											<div class="panel-view-more">
+	                        					Ver más 
+	                        					<i class="fa fa-angle-right"></i>
+		                    				</div>
+	                        			</a>
+									</article>
+								</div>
+								<!-- panel resume box -->
+								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+									<article class="panel-resume-content">
+										<a class="show-user-rate" data-toggle="modal" data-target="#UserRateAlert">
+											<div class="panel-header uppercase text-ellipsis">
+												Valoraciones
+												<div class="count bold">
+													5
+												</div>
+											</div>
+											<div class="panel-view-more">
+		                        				Ver más 
+		                        				<i class="fa fa-angle-right"></i>
+		                    				</div>
+		                    			</a>
+									</article>
+								</div>
+								<!-- panel resume box -->
+								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+									<article class="panel-resume-content">
+										<a class="show-user-followers-detail" alt="Seguidores">
+											<div class="panel-header uppercase text-ellipsis">
+												Seguidores
+												<div class="count bold">
+													15
+												</div>
+											</div>
+											<div class="panel-view-more">
+		                        				Ver más 
+		                        				<i class="fa fa-angle-right"></i>
+		                    				</div>
+		                    			</a>
+									</article>
+								</div>
+								<!-- panel resume box -->
+								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+									<article class="panel-resume-content">
+										<a class="show-user-following-detail" alt="Siguiendo">
+											<div class="panel-header uppercase text-ellipsis">
+												Siguiendo
+												<div class="count bold">
+													58
+												</div>
+											</div>
+											<div class="panel-view-more">
+		                        				Ver más 
+		                        				<i class="fa fa-angle-right"></i>
+		                    				</div>
+		                    			</a>
+									</article>
+								</div>
+								<!-- panel resume box -->
+								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+									<article class="panel-resume-content">
+										<a class="show-user-products-favorites-detail" alt="Articulos Favoritos">
+											<div class="panel-header uppercase text-ellipsis">
+												ARTICULOS FAVORITOS               
+												<div class="count bold">
+													15
+												</div>
+											</div>
+											<div class="panel-view-more">
+		                        				Ver más 
+		                        				<i class="fa fa-angle-right"></i>
+		                    				</div>
+		                    			</a>
+									</article>
+								</div>
+								<!-- panel resume box -->
+								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+									<article class="panel-resume-content">
+										<a class="show-user-products-bought-detail" alt="Compras">
+											<div class="panel-header uppercase text-ellipsis">
+												ARTICULOS Comprados               
+												<div class="count bold">
+													201
+												</div>
+											</div>
+											<div class="panel-view-more">
+		                        				Ver más 
+		                        				<i class="fa fa-angle-right"></i>
+		                    				</div>
+		                    			</a>
+									</article>
+								</div>
+								<!-- panel resume box -->
+								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+									<article class="panel-resume-content">
+										<a class="show-user-favorite-following-stores-detail" alt="Tiendas favoritas">
+											<div class="panel-header uppercase text-ellipsis">
+												Tiendas favoritas          
+												<div class="count bold">
+													59
+												</div>
+											</div>
+											<div class="panel-view-more">
+		                        				Ver más 
+		                        				<i class="fa fa-angle-right"></i>
+		                    				</div>
+		                    			</a>
+									</article>
+								</div>
+								<!-- panel resume box -->
+								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+									<article class="panel-resume-content">
+										<a class="show-user-favorite-following-stores-detail" alt="Tiendas Seguidas">
+											<div class="panel-header uppercase text-ellipsis">
+												Tiendas Seguidas          
+												<div class="count bold">
+													26
+												</div>
+											</div>
+											<div class="panel-view-more">
+		                        				Ver más 
+		                        				<i class="fa fa-angle-right"></i>
+		                    				</div>
+		                    			</a>
+									</article>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel-summary-container">
+							<div class="row">
+								<div class="col-md-7 col-lg-8">
+									<!-- Seguidores, Compras -->
+									<div class="row">
+										<div class="col-xs-12">
+											<article class="panel-summary-content">
+												<div class="panel-summary-header uppercase">
+													Seguidores, Compras
+												</div>
+												<div class="panel-summary-body">
+													<img src="../images/grafico.png" style="padding:20px">
+												</div>
+											</article>
+										</div>
+									</div>
+									<!-- Últimas Compras  -->
+									<div class="row">
+										<div class="col-xs-12">
+											<article class="panel-summary-content">
+												<div class="panel-summary-header">
+													<span class="uppercase">
+														Últimas Compras
+													</span>
+													<span class="pull-right">
+														<a class="show-user-purchases">
+															Ver más
+															<i class="fa fa-angle-right" aria-hidden="true"></i>
+														</a>
+													</span>
+												</div>
+												<div class="panel-summary-body">
+													<div class="table-responsive">
+														<table class="table table-hover">
+						  									<tbody>
+							  									<tr>
+							  										<th>Fecha</th>
+							  										<th>Tienda</th>
+							  										<th>Estado Pago</th>
+							  										<th>Cantidad</th>
+							  										<th>Total</th>
+							  										<th>Estado</th>
+							  									</tr>
+							  									<tr>
+							  										<td>10/02/2017</td>
+							  										<td>Storename</td>
+							  										<td class="payment-status">
+							  											<span class="color-positive">
+							  												Pagado
+							  												<br> 
+							  												<small class="hide">(MercadoPago)</small>
+							  												<small>(Acordar con el vendedor)</small>
+							  											</span>
+							  											<span class="neutral hide">Pendiente</span>
+							  											<span class="color-negative hide">Cancelado</span>
+							  										</td>
+							  										<td>5</td>
+							  										<td>$300.00 ARS</td>
+							  										<td class="type-status">
+							  											<span class="color-neutral">Nueva</span>
+							  											<span class="color-positive hide">Completada</span>
+							  											<span class="color-negative hide">Cancelada</span>
+							  										</td>
+							  									</tr>
+							  									<tr>
+							  										<td>29/01/2017</td>
+							  										<td>Storename</td>
+							  										<td class="payment-status">
+							  											<span class="color-positive">
+							  												Pagado
+							  												<br> 
+							  												<small>(MercadoPago)</small>
+							  												<small class="hide">((Acordar con el vendedor)</small>
+							  											</span>
+							  											<span class="neutral hide">Pendiente</span>
+							  											<span class="color-negative hide">Cancelado</span>
+							  										</td>
+							  										<td>62</td>
+							  										<td>$2795.00 ARS</td>
+							  										<td class="type-status">
+							  											<span class="color-neutral hide">Nueva</span>
+							  											<span class="color-positive">Completada</span>
+							  											<span class="color-negative hide">Cancelada</span>
+							  										</td>
+							  									</tr>
+							  								</tbody>
+							  							</table>
+							  						</div>
+												</div>
+											</article>
+										</div>
+									</div>
+									<!-- Últimos Mensajes  -->
+									<div class="row">
+										<div class="col-xs-12">
+											<article class="panel-summary-content">
+												<div class="panel-summary-header">
+													<span class="uppercase">
+														Últimos Mensajes
+													</span>
+													<span class="pull-right">
+														<a href="mail.html">
+															Ver más 
+															<i class="fa fa-angle-right" aria-hidden="true"></i>
+														</a>
+													</span>
+												</div>
+												<div class="panel-summary-body">
+													<div class="table-responsive">
+														<table class="table table-hover">
+						  									<tbody>
+							  									<tr>
+							  										<th>Fecha</th>
+							  										<th>Usuario/Tienda</th>
+							  										<th>Asunto</th>
+							  										<th>Mensaje</th>
+							  									</tr>
+							  									<tr>
+							  										<td>12/02/2017</td>
+							  										<td>Maria Basile</td>
+							  										<td>Asunto</td>
+							  										<td>texto del mensaje, texto del mensaje, texto del mensaje, texto del mensaje, texto del mensaje, texto del mensaje, texto del mensaje, texto del mensaje</td>
+							  									</tr>
+							  									<tr>
+							  										<td>29/01/2017</td>
+							  										<td>Storename</td>
+							  										<td>Titulo del Mensajes</td>
+							  										<td>Texto del mensaje, texto del mensaje, texto del mensaje</td>
+							  									</tr>
+							  								</tbody>
+							  							</table>
+							  						</div>
+												</div>
+											</article>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-5 col-lg-4">
+									<!-- Tienda, Favoritos -->
+									<div class="row">
+										<div class="col-xs-12">
+											<article class="panel-summary-content">
+												<div class="panel-summary-header">
+												  	<div class="row">
+													    <div class="col-xs-7 text-ellipsis">
+															<span class="uppercase bold">
+																Tienda
+															</span>
+															Últimas Favoritadas
+													    </div>
+													    <div class="col-xs-5">
+													    	<span class="pull-right">
+																<a class="show-user-favorite-following-stores-detail" alt="Tiendas Favoritadas">
+																	Ver más
+																	<i class="fa fa-angle-right" aria-hidden="true"></i>
+																</a>
+															</span>
+													    </div>
+												    </div>
+												</div>
+												<div class="panel-summary-body">
+													<div class="row">
+														<!-- user -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-user-container">
+																<a href="user.html" title="username">
+																	<img src="../images/default/default-store.png" alt="username">
+																	<div class="text-two-lines small">
+																		Nombre de la tienda
+																	</div>
+																</a>
+															</div>
+														</div>
+														<!-- user -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-user-container">
+																<a href="user.html" title="username">
+																	<img src="../images/default/default-store.png" alt="username">
+																	<div class="text-two-lines small">
+																		Nombre de la tienda
+																	</div>
+																</a>
+															</div>
+														</div>
+														<!-- user -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-user-container">
+																<a href="user.html" title="username">
+																	<img src="../images/default/default-store.png" alt="username">
+																	<div class="text-two-lines small">
+																		Nombre de la tienda
+																	</div>
+																</a>
+															</div>
+														</div>
+														<!-- user -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-user-container">
+																<a href="user.html" title="username">
+																	<img src="../images/default/default-store.png" alt="username">
+																	<div class="text-two-lines small">
+																		Nombre de la tienda
+																	</div>
+																</a>
+															</div>
+														</div>
+														<!-- user -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-user-container">
+																<a href="user.html" title="username">
+																	<img src="../images/default/default-store.png" alt="username">
+																	<div class="text-two-lines small">
+																		Nombre de la tienda
+																	</div>
+																</a>
+															</div>
+														</div><!-- user -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-user-container">
+																<a href="user.html" title="username">
+																	<img src="../images/default/default-store.png" alt="username">
+																	<div class="text-two-lines small">
+																		Nombre de la tienda
+																	</div>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</article>
+										</div>
+									</div>
+									<!-- Tienda, Seguidores -->
+									<div class="row">
+										<div class="col-xs-12">
+											<article class="panel-summary-content">
+												<div class="panel-summary-header">
+												  	<div class="row">
+													    <div class="col-xs-7 text-ellipsis">
+															<span class="uppercase bold">
+																Tienda
+															</span>
+															Últimas Seguidas
+													    </div>
+													    <div class="col-xs-5">
+													    	<span class="pull-right">
+																<a class="show-user-favorite-following-stores-detail" alt="Tiendas Seguidas">
+																	Ver más
+																	<i class="fa fa-angle-right" aria-hidden="true"></i>
+																</a>
+															</span>
+													    </div>
+												    </div>
+												</div>
+												<div class="panel-summary-body">
+													<div class="row">
+														<!-- user -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-user-container">
+																<a href="user.html" title="username">
+																	<img src="../images/default/default-store.png" alt="username">
+																	<div class="text-two-lines small">
+																		Nombre de la tienda
+																	</div>
+																</a>
+															</div>
+														</div>
+														<!-- user -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-user-container">
+																<a href="user.html" title="username">
+																	<img src="../images/default/default-store.png" alt="username">
+																	<div class="text-two-lines small">
+																		Nombre de la tienda
+																	</div>
+																</a>
+															</div>
+														</div>
+														<!-- user -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-user-container">
+																<a href="user.html" title="username">
+																	<img src="../images/default/default-store.png" alt="username">
+																	<div class="text-two-lines small">
+																		Nombre de la tienda
+																	</div>
+																</a>
+															</div>
+														</div>
+														<!-- user -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-user-container">
+																<a href="user.html" title="username">
+																	<img src="../images/default/default-store.png" alt="username">
+																	<div class="text-two-lines small">
+																		Nombre de la tienda
+																	</div>
+																</a>
+															</div>
+														</div>
+														<!-- user -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-user-container">
+																<a href="user.html" title="username">
+																	<img src="../images/default/default-store.png" alt="username">
+																	<div class="text-two-lines small">
+																		Nombre de la tienda
+																	</div>
+																</a>
+															</div>
+														</div><!-- user -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-user-container">
+																<a href="user.html" title="username">
+																	<img src="../images/default/default-store.png" alt="username">
+																	<div class="text-two-lines small">
+																		Nombre de la tienda
+																	</div>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</article>
+										</div>
+									</div>
+									<!-- Articulo, Favoritos -->
+									<div class="row">
+										<div class="col-xs-12">
+											<article class="panel-summary-content">
+												<div class="panel-summary-header">
+												  	<div class="row">
+													    <div class="col-xs-7 text-ellipsis">
+															<span class="uppercase bold">
+																Articulos
+															</span>
+															Favoritados
+													    </div>
+													    <div class="col-xs-5">
+													    	<span class="pull-right">
+																<a class="show-user-products-favorites-detail" alt="Articulos Favoritados">
+																	Ver más
+																	<i class="fa fa-angle-right" aria-hidden="true"></i>
+																</a>
+															</span>
+													    </div>
+												    </div>
+												</div>
+												<div class="panel-summary-body">
+													<div class="row">
+														<!-- product -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-product-container">
+																<a href="product.html" title="productname">
+																	<img src="../images/products/product-01.jpg" alt="productname">
+																	<div class="text-two-lines small">
+																		Nombre de producto Nombre de producto Nombre de producto
+																	</div> 
+																</a>
+															</div>
+														</div>
+														<!-- product -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-product-container">
+																<a href="product.html" title="productname">
+																	<img src="../images/products/product-02.jpg" alt="productname">
+																	<div class="text-two-lines small">
+																		Nombre de producto Nombre de producto Nombre de producto
+																	</div> 
+																</a>
+															</div>
+														</div>
+														<!-- product -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-product-container">
+																<a href="product.html" title="productname">
+																	<img src="../images/products/product-03.jpg" alt="productname">
+																	<div class="text-two-lines small">
+																		Nombre de producto Nombre de producto Nombre de producto
+																	</div> 
+																</a>
+															</div>
+														</div>
+														<!-- product -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-product-container">
+																<a href="product.html" title="productname">
+																	<img src="../images/products/product-03.jpg" alt="productname">
+																	<div class="text-two-lines small">
+																		Nombre de producto Nombre de producto Nombre de producto
+																	</div> 
+																</a>
+															</div>
+														</div>
+														<!-- product -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-product-container">
+																<a href="product.html" title="productname">
+																	<img src="../images/products/product-01.jpg" alt="productname">
+																	<div class="text-two-lines small">
+																		Nombre de producto Nombre de producto Nombre de producto
+																	</div> 
+																</a>
+															</div>
+														</div>
+														<!-- product -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-product-container">
+																<a href="product.html" title="productname">
+																	<img src="../images/products/product-02.jpg" alt="productname">
+																	<div class="text-two-lines small">
+																		Nombre de producto Nombre de producto Nombre de producto
+																	</div> 
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</article>
+										</div>
+									</div>
+									<!-- Articulos, Mas Vendidos -->
+									<div class="row">
+										<div class="col-xs-12">
+											<article class="panel-summary-content">
+												<div class="panel-summary-header">
+												  	<div class="row">
+													    <div class="col-xs-7 text-ellipsis">
+															<span class="uppercase bold">
+																Articulos
+															</span>
+															Mas Comprados
+													    </div>
+													    <div class="col-xs-5">
+													    	<span class="pull-right">
+																<a class="show-user-products-bought-detail" alt="Articulos Comprados">
+																	Ver más
+																	<i class="fa fa-angle-right" aria-hidden="true"></i>
+																</a>
+															</span>
+													    </div>
+												    </div>
+												</div>
+												<div class="panel-summary-body">
+													<div class="row">
+														<!-- product -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-product-container">
+																<a href="product.html" title="productname">
+																	<img src="../images/products/product-01.jpg" alt="productname">
+																	<div class="text-two-lines small">
+																		Nombre de producto Nombre de producto Nombre de producto
+																	</div> 
+																</a>
+															</div>
+														</div>
+														<!-- product -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-product-container">
+																<a href="product.html" title="productname">
+																	<img src="../images/products/product-02.jpg" alt="productname">
+																	<div class="text-two-lines small">
+																		Nombre de producto Nombre de producto Nombre de producto
+																	</div> 
+																</a>
+															</div>
+														</div>
+														<!-- product -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-product-container">
+																<a href="product.html" title="productname">
+																	<img src="../images/products/product-03.jpg" alt="productname">
+																	<div class="text-two-lines small">
+																		Nombre de producto Nombre de producto Nombre de producto
+																	</div> 
+																</a>
+															</div>
+														</div>
+														<!-- product -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-product-container">
+																<a href="product.html" title="productname">
+																	<img src="../images/products/product-03.jpg" alt="productname">
+																	<div class="text-two-lines small">
+																		Nombre de producto Nombre de producto Nombre de producto
+																	</div> 
+																</a>
+															</div>
+														</div>
+														<!-- product -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-product-container">
+																<a href="product.html" title="productname">
+																	<img src="../images/products/product-01.jpg" alt="productname">
+																	<div class="text-two-lines small">
+																		Nombre de producto Nombre de producto Nombre de producto
+																	</div> 
+																</a>
+															</div>
+														</div>
+														<!-- product -->
+														<div class="col-xs-4 text-center">
+															<div class="panel-product-container">
+																<a href="product.html" title="productname">
+																	<img src="../images/products/product-02.jpg" alt="productname">
+																	<div class="text-two-lines small">
+																		Nombre de producto Nombre de producto Nombre de producto
+																	</div> 
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</article>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Seguidores -->
+					<div class="user-followers-detail hide">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="box-rounded">
+									<div class="panel-detail-container">
+										<div class="row">
+											<div class="col-xs-6">
+												<h4 class="uppercase">
+													Seguidores (37)
+												</h4>
+											</div>
+											<div class="col-xs-6 text-right">
+												<div class="dropdown">
+													<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuOrderResults" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														Ordenar por
+														<span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu displayLeft" aria-labelledby="dropdownMenuOrderResults">
+														<li><a href="#">Recientes</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- table product details -->
+										<div class="table-responsive">
+											<table class="table table-hover margin-top">
+			  									<tbody>
+				  									<tr>
+				  										<th colspan="2">Usuario</th>
+				  										<th>Desde</th>
+				  										<th>&nbsp;</th>
+				  									</tr>
+				  									<tr>
+				  										<td>
+				  											<a href="user.html">
+				  												<img src="../images/default/default-user.png" class="round" alt="username">
+				  											</a>
+				  										</td>					
+				  										<td>
+				  											<a href="user.html">
+				  												Barbara Miara
+				  											</a>
+				  										</td>
+				  										<td>01/06/2016</td>
+				  										<td>
+				  											<a class="btn btn-primary-invert btn-long">
+							                        			Seguir
+							                        		</a>
+				  										</td>
+				  									</tr>
+				  									<tr>
+				  										<td>
+				  											<a href="user.html">
+				  												<img src="../images/default/default-user.png" class="round" alt="username">
+				  											</a>
+				  										</td>					
+				  										<td>
+				  											<a href="user.html">
+				  												Carolina Salguero
+				  											</a>
+				  										</td>
+				  										<td>22/05/2016</td>
+				  										<td>
+				  											<a class="btn btn-primary btn-long">
+                        										Siguiendo
+                        									</a>
+				  										</td>
+				  									</tr>
+				  									<tr>
+				  										<td>
+				  											<a href="user.html">
+				  												<img src="../images/default/default-user.png" class="round" alt="username">
+				  											</a>
+				  										</td>					
+				  										<td>
+				  											<a href="user.html">
+				  												Marcos Sastre
+				  											</a>
+				  										</td>
+				  										<td>15/01/2016</td>
+				  										<td>
+				  											<a class="btn btn-primary btn-long">
+                        										Siguiendo
+                        									</a>
+				  										</td>
+				  									</tr>
+				  								</tbody>
+				  							</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Siguiendo -->
+					<div class="user-following-detail hide">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="box-rounded">
+									<div class="panel-detail-container">
+										<div class="row">
+											<div class="col-xs-6">
+												<h4 class="uppercase">
+													Siguiendo (12)
+												</h4>
+											</div>
+											<div class="col-xs-6 text-right">
+												<div class="dropdown">
+													<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuOrderResults" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														Ordenar por
+														<span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu displayLeft" aria-labelledby="dropdownMenuOrderResults">
+														<li><a href="#">Recientes</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- table product details -->
+										<div class="table-responsive">
+											<table class="table table-hover margin-top">
+			  									<tbody>
+				  									<tr>
+				  										<th colspan="2">Usuario</th>
+				  										<th>Desde</th>
+				  										<th>&nbsp;</th>
+				  									</tr>
+				  									<tr>
+				  										<td>
+				  											<a href="user.html">
+				  												<img src="../images/default/default-user.png" class="round" alt="username">
+				  											</a>
+				  										</td>					
+				  										<td>
+				  											<a href="user.html">
+				  												Barbara Miara
+				  											</a>
+				  										</td>
+				  										<td>01/06/2016</td>
+				  										<td>
+				  											<a class="btn btn-primary btn-long">
+                        										Siguiendo
+                        									</a>
+				  										</td>
+				  									</tr>
+				  									<tr>
+				  										<td>
+				  											<a href="user.html">
+				  												<img src="../images/default/default-user.png" class="round" alt="username">
+				  											</a>
+				  										</td>					
+				  										<td>
+				  											<a href="user.html">
+				  												Carolina Salguero
+				  											</a>
+				  										</td>
+				  										<td>22/05/2016</td>
+				  										<td>
+				  											<a class="btn btn-primary btn-long">
+                        										Siguiendo
+                        									</a>
+				  										</td>
+				  									</tr>
+				  									<tr>
+				  										<td>
+				  											<a href="user.html">
+				  												<img src="../images/default/default-user.png" class="round" alt="username">
+				  											</a>
+				  										</td>					
+				  										<td>
+				  											<a href="user.html">
+				  												Marcos Sastre
+				  											</a>
+				  										</td>
+				  										<td>15/01/2016</td>
+				  										<td>
+				  											<a class="btn btn-primary btn-long">
+                        										Siguiendo
+                        									</a>
+				  										</td>
+				  									</tr>
+				  								</tbody>
+				  							</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Articulos Favoritados -->
+					<div class="user-products-favorites-detail hide">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="box-rounded">
+									<div class="panel-detail-container">
+										<div class="row">
+											<div class="col-xs-6">
+												<h4 class="uppercase">
+													Articulos Favoritos (86)
+												</h4>
+											</div>
+											<div class="col-xs-6 text-right">
+												<div class="dropdown">
+													<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuOrderResults" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														Ordenar por
+														<span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu displayLeft" aria-labelledby="dropdownMenuOrderResults">
+														<li><a href="#">Recientes</a></li>
+														<li><a href="#">Mas Comprados</a></li>
+														<li><a href="#">Mas Vistos</a></li>
+														<li><a href="#">Menor Precio</a></li>
+														<li><a href="#">Mayor Precio</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- table product details -->
+										<div class="table-responsive">
+											<table class="table table-hover margin-top">
+			  									<tbody>
+				  									<tr>
+				  										<th colspan="2">Articulo</th>
+				  										<th>Precio</th>
+				  										<th>Decuento</th>
+				  										<th>Comprados</th>
+				  										<th>Visto</th>
+				  										<th>Compartido</th>
+				  									</tr>
+				  									<tr>
+				  										<td>
+				  											<a href="product.html">
+				  												<img src="../images/products/product-01.jpg">
+				  											</a>
+				  										</td>			  					
+				  										<td>
+				  											<a href="product.html">
+				  												Nombre de Producto
+				  											</a>
+				  										</td>
+				  										<td>$39.99 ARS</td>
+				  										<td>10%</td>
+				  										<td>16</td>
+				  										<td>15</td>
+				  										<td>0</td>
+				  									</tr>
+				  									<tr>
+				  										<td>
+				  											<a href="product.html">
+				  												<img src="../images/products/product-02.jpg">
+				  											</a>
+				  										</td>			  					
+				  										<td>
+				  											<a href="product.html">
+				  												Nombre de Producto
+				  											</a>
+				  										</td>
+				  										<td>$56.00 ARS</td>
+				  										<td>0%</td>
+				  										<td>1</td>
+				  										<td>6</td>
+				  										<td>1</td>
+				  									</tr>
+				  									<tr>
+				  										<td>
+				  											<a href="product.html">
+				  												<img src="../images/products/product-03.jpg">
+				  											</a>
+				  										</td>			  					
+				  										<td>
+				  											<a href="product.html">
+				  												Nombre de Producto
+				  											</a>
+				  										</td>
+				  										<td>$3.99 ARS</td>
+				  										<td>0%</td>
+				  										<td>0</td>
+				  										<td>1</td>
+				  										<td>0</td>
+				  									</tr>
+				  								</tbody>
+				  							</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Articulos Comprados -->
+					<div class="user-products-bought-detail hide">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="box-rounded">
+									<div class="panel-detail-container">
+										<div class="row">
+											<div class="col-xs-6">
+												<h4 class="uppercase">
+													Articulos Comprados (86)
+												</h4>
+											</div>
+											<div class="col-xs-6 text-right">
+												<div class="dropdown">
+													<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuOrderResults" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														Ordenar por
+														<span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu displayLeft" aria-labelledby="dropdownMenuOrderResults">
+														<li><a href="#">Recientes</a></li>
+														<li><a href="#">Mas Comprados</a></li>
+														<li><a href="#">Mas Vistos</a></li>
+														<li><a href="#">Menor Precio</a></li>
+														<li><a href="#">Mayor Precio</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- table product details -->
+										<div class="table-responsive">
+											<table class="table table-hover margin-top">
+			  									<tbody>
+				  									<tr>
+				  										<th colspan="2">Articulo</th>
+				  										<th>Precio</th>
+				  										<th>Decuento</th>
+				  										<th>Comprados</th>
+				  										<th>Visto</th>
+				  										<th>Compartido</th>
+				  									</tr>
+				  									<tr>
+				  										<td>
+				  											<a href="product.html">
+				  												<img src="../images/products/product-01.jpg">
+				  											</a>
+				  										</td>			  					
+				  										<td>
+				  											<a href="product.html">
+				  												Nombre de Producto
+				  											</a>
+				  										</td>
+				  										<td>$39.99 ARS</td>
+				  										<td>10%</td>
+				  										<td>16</td>
+				  										<td>15</td>
+				  										<td>0</td>
+				  									</tr>
+				  									<tr>
+				  										<td>
+				  											<a href="product.html">
+				  												<img src="../images/products/product-02.jpg">
+				  											</a>
+				  										</td>			  					
+				  										<td>
+				  											<a href="product.html">
+				  												Nombre de Producto
+				  											</a>
+				  										</td>
+				  										<td>$56.00 ARS</td>
+				  										<td>0%</td>
+				  										<td>1</td>
+				  										<td>6</td>
+				  										<td>1</td>
+				  									</tr>
+				  									<tr>
+				  										<td>
+				  											<a href="product.html">
+				  												<img src="../images/products/product-03.jpg">
+				  											</a>
+				  										</td>			  					
+				  										<td>
+				  											<a href="product.html">
+				  												Nombre de Producto
+				  											</a>
+				  										</td>
+				  										<td>$3.99 ARS</td>
+				  										<td>0%</td>
+				  										<td>5</td>
+				  										<td>1</td>
+				  										<td>0</td>
+				  									</tr>
+				  								</tbody>
+				  							</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Tiendas Siguiendo y Favoritadas -->
+					<div class="user-favorite-following-stores-detail hide">
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- Seguidores y likes -->
+								<div class="box-rounded">
+									<div class="panel-detail-container">
+										<div class="row">
+											<div class="col-xs-6">
+												<h4 class="uppercase">
+													Tiendas Seguidas (23) &amp; Favoritas (18)
+												</h4>
+											</div>
+											<div class="col-xs-6 text-right">
+												<div class="dropdown">
+													<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuOrderResults" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														Ordenar por
+														<span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu displayLeft" aria-labelledby="dropdownMenuOrderResults">
+														<li><a href="#">Recientes</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- table product details -->
+										<div class="table-responsive">
+											<table class="table table-hover margin-top">
+			  									<tbody>
+				  									<tr>
+				  										<th colspan="2">Tienda</th>
+				  										<th>Tienda Siguiendo</th>
+				  										<th>Tienda Favorita</th>
+				  									</tr>
+				  									<tr>
+				  										<td>
+				  											<a href="store.html">
+				  												<img src="../images/default/default-store.png" class="round" alt="storename">
+				  											</a>
+				  										</td>					
+				  										<td>
+				  											<a href="store.html">
+				  												Nombre de Tienda
+				  											</a>
+				  										</td>
+				  										<td><i class="fa fa-check color-positive" aria-hidden="true"></i></td>
+				  										<td><i class="fa fa-check color-positive" aria-hidden="true"></i></td>
+				  									</tr>
+				  									<tr>
+				  										<td>
+				  											<a href="store.html">
+				  												<img src="../images/default/default-store.png" class="round" alt="storename">
+				  											</a>
+				  										</td>					
+				  										<td>
+				  											<a href="store.html">
+				  												Nombre de Tienda
+				  											</a>
+				  										</td>
+				  										<td><i class="fa fa-check color-positive" aria-hidden="true"></i></td>
+				  										<td><i class="fa fa-times color-negative" aria-hidden="true"></i></td>
+				  									</tr>
+				  									<tr>
+				  										<td>
+				  											<a href="store.html">
+				  												<img src="../images/default/default-store.png" class="round" alt="storename">
+				  											</a>
+				  										</td>					
+				  										<td>
+				  											<a href="store.html">
+				  												Nombre de Tienda
+				  											</a>
+				  										</td>
+				  										<td><i class="fa fa-times color-negative" aria-hidden="true"></i></td>
+				  										<td><i class="fa fa-check color-positive" aria-hidden="true"></i></td>
+				  									</tr>
+				  								</tbody>
+				  							</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<!-- user account -->
+					<div class="user-account hide">
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- Informacion de Cuenta -->
+								<div class="box-rounded">
+									<div class="account-info">
+										<h4 class="uppercase row">
+											Informacion de Cuenta
+										</h4>
+										<div class="row form-group">
+											<div class="col-xs-4">
+												Email
+											</div>
+											<div class="col-xs-4">
+												brenda.najbi@jetzi.com
+											</div>
+											<div class="col-xs-4 text-right">
+												<a data-toggle="modal" data-target="#edit-userMail">Editar</a>
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-xs-4">
+												Clave
+											</div>
+											<div class="col-xs-4">
+												*********
+											</div>
+											<div class="col-xs-4 text-right">
+												<a data-toggle="modal" data-target="#edit-userPass">Editar</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<!-- Informacion Personal -->
+								<div class="box-rounded">
+									<div class="account-info">
+										<h4 class="uppercase row">
+											Informacion Personal
+										</h4>
+										<div class="row form-group">
+											<div class="col-xs-4">
+												Nombre
+											</div>
+											<div class="col-xs-4">
+												Brenda
+											</div>
+											<div class="col-xs-4 text-right">
+												<a data-toggle="modal" data-target="#edit-userInfo">Editar</a>
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-xs-4">
+												Apellido
+											</div>
+											<div class="col-xs-4">
+												Najbi
+											</div>
+											<div class="col-xs-4 text-right">
+												<a data-toggle="modal" data-target="#edit-userInfo">Editar</a>
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-xs-4">
+												Telefono
+											</div>
+											<div class="col-xs-4">
+												0115411212
+											</div>
+											<div class="col-xs-4 text-right">
+												<a data-toggle="modal" data-target="#edit-userInfo">Editar</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<!-- purchases -->
+					<div class="user-purchases hide">
+						<!-- show when empty -->
+						<div class="row text-center margin-bottom">
+							<div class="col-xs-12">
+								<span class="empty-content-msg">
+									No se encuentran Compras.
+								</span>
+							</div>
+						</div>
+						<!-- purchases table -->
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- Informacion de Cuenta -->
+								<div class="box-rounded">
+									<div class="account-purchases">
+										<h4 class="uppercase row">
+											Compras 
+											<span class="badge badge-dot">12</span>
+										</h4>
+										<!-- Filters -->
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="table-filters">
+													<span class="filter-item-status">
+														<ul class="list-unstyled">
+													  		<li class="selected"><a href="#">Todas (12)</a></li>
+												      		<li><a href="#">Nuevas (7)</a></li>
+												      		<li><a href="#">Completas (2)</a></li>
+												      		<li><a href="#">Finalizadas (3)</a></li>
+												    	</ul>
+												    </span>
+													<!-- orden -->
+													<span class="filter-publication-order">	
+														<button type="button" class="btn btn-default dropdown-toggle pull-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																Más Recientes
+																<span class="caret"></span>
+														</button>
+													    <ul class="dropdown-menu right">
+													      	<li><a href="#">Menos Recientes</a></li>
+													    </ul>
+													</span>
+												</div>
+											</div>
+										</div>
+										<!-- table Purchases -->
+										<div class="table-responsive">
+											<table class="table table-hover purchases margin-top">
+			  									<tbody>
+				  									<tr>
+				  										<th>Fecha</th>
+				  										<th>Compra</th>
+				  										<th>Tienda</th>
+				  										<th>Pago</th>
+				  										<th>Envío</th>
+				  										<th>Cantidad</th>
+				  										<th>Total</th>
+				  										<th>Valoracion</th>
+				  										<th>Estado</th>
+				  										<th class="text-right">Ver Detalle</th>
+				  									</tr>
+				  									<tr>
+				  										<td>10/10/2016</td>
+				  										<td>
+				  											<a data-toggle="modal" data-target="#purchaseDetail">
+				  												#123123
+				  											</a>
+				  										</td>
+				  										<td>Storename</td>
+				  										<td class="payment-status">
+				  											<span class="color-positive">
+				  												Pagado
+				  												<br/> 
+				  												<small class="hide">(MercadoPago)</small>
+				  												<small>(Acordar con el vendedor)</small>
+				  											</span>
+				  											<span class="neutral hide">Pendiente</span>
+				  											<span class="color-negative hide">Cancelado</span>
+				  										</td>
+				  										<td class="shipping-status">
+				  											<span class="color-positive hide">Recibida</span>
+				  											<span class="color-negative hide">No Recibida</span>
+				  											<span class="color-neutral">En Espera</span>
+				  										</td>
+				  										<td>5</td>
+				  										<td>$300.00 ARS</td>
+				  										<td class="rate-status">
+															<a data-toggle="modal" data-target="#purchaseRate">
+				  												<span class="color-neutral">Pendiente</span>
+				  											</a>
+				  											<span class="color-black hide">Sin Valoracion</span>
+				  											<span class="positive hide">Positiva</span>
+				  											<span class="neutral hide">Neutra</span>
+				  											<span class="negative hide">Negativa</span>
+				  										</td>
+				  										<td class="type-status">
+				  											<span class="color-neutral">Nueva</span>
+				  											<span class="color-positive hide">Completada</span>
+				  											<span class="color-negative hide">Cancelada</span>
+				  										</td>
+				  										<td class="text-right">
+				  											<div class="dropdown">
+		  														<a class="dropdown-toggle" type="button" id="dropdownDetails" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+															    	<i class="fa fa-cog fa-lg"></i>
+															    	<span class="caret"></span>
+		  														</a>
+		  														<ul class="dropdown-menu displayLeft" aria-labelledby="dropdownDetails">
+		    														<li>
+		    															<a data-toggle="modal" data-target="#purchaseDetail">
+		    																Ver detalle
+		    															</a>
+		    														</li>
+																    <li>
+																    	<a data-toggle="modal" data-target="#purchaseRate">
+																    		Valorar
+																    	</a>
+																    </li>
+																    <li><a href="#">Something else here</a></li>
+																    <li role="separator" class="divider"></li>
+																    <li><a href="#">Separated link</a></li>
+																  </ul>
+															</div>
+				  										</td>
+				  									</tr>
+				  									<tr>
+				  										<td>19/09/2016</td>
+				  										<td>
+				  											<a data-toggle="modal" data-target="#purchaseDetail">
+				  												#123122
+				  											</a>
+				  										</td>
+				  										<td>Storename</td>
+				  										<td class="payment-status">
+				  											<span class="color-positive">
+				  												Pagado
+				  												<br/> 
+				  												<small>(MercadoPago)</small>
+				  												<small class="hide">(Acordar con el vendedor)</small>
+				  											</span>
+				  											<span class="neutral hide">Pendiente</span>
+				  											<span class="color-negative hide">Cancelado</span>
+				  										</td>
+				  										<td class="shipping-status">
+				  											<span class="color-positive">Recibida</span>
+				  											<span class="color-negative hide">No Recibida</span>
+				  											<span class="color-neutral hide">En Espera</span>
+				  										</td>
+				  										<td>14</td>
+				  										<td>$5400.00 ARS</td>
+				  										<td class="rate-status">
+															<a data-toggle="modal" data-target="#purchaseRate" class="hide">
+				  												<span class="color-neutral">Pendiente</span>
+				  											</a>
+				  											<span class="color-black hide">Sin Valoracion</span>
+				  											<span class="positive">Positiva</span>
+				  											<span class="neutral hide">Neutra</span>
+				  											<span class="negative hide">Negativa</span>
+				  										</td>
+				  										<td class="type-status">
+				  											<span class="color-neutral hide">Nueva</span>
+				  											<span class="color-positive">Completada</span>
+				  											<span class="color-negative hide">Cancelada</span>
+				  										</td>
+				  										<td class="text-right">
+				  											<div class="dropdown">
+		  														<a class="dropdown-toggle" type="button" id="dropdownDetails" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+															    	<i class="fa fa-cog fa-lg"></i>
+															    	<span class="caret"></span>
+		  														</a>
+		  														<ul class="dropdown-menu displayLeft" aria-labelledby="dropdownDetails">
+		    														<li>
+		    															<a data-toggle="modal" data-target="#purchaseDetail">
+		    																Ver detalle
+		    															</a>
+		    														</li>
+																    <li>
+																    	<a data-toggle="modal" data-target="#purchaseRate">
+																    		Valorar
+																    	</a>
+																    </li>
+																    <li><a href="#">Something else here</a></li>
+																    <li role="separator" class="divider"></li>
+																    <li><a href="#">Separated link</a></li>
+																  </ul>
+															</div>
+				  										</td>
+				  									</tr>
+				  									<tr>
+				  										<td>21/07/2016</td>
+				  										<td>
+				  											<a data-toggle="modal" data-target="#purchaseDetail">
+				  												#123100
+				  											</a>
+				  										</td>
+				  										<td>Nombre de Tienda</td>
+				  										<td class="payment-status">
+				  											<span class="color-positive hide">
+				  												Pagado
+				  												<br/> 
+				  												<small>(MercadoPago)</small>
+				  												<small class="hide">(Acordar con el vendedor)</small>
+				  											</span>
+				  											<span class="color-neutral">Pendiente</span>
+				  											<span class="color-negative hide">Cancelado</span>
+				  										</td>
+				  										<td class="shipping-status">
+				  											<span class="color-positive hide">Recibida</span>
+				  											<span class="color-negative hide">No Recibida</span>
+				  											<span class="color-neutral">En Espera</span>
+				  										</td>
+				  										<td>8</td>
+				  										<td>$7523.00 ARS</td>
+				  										<td class="rate-status">
+															<a data-toggle="modal" data-target="#purchaseRate" class="">
+				  												<span class="color-neutral">Pendiente</span>
+				  											</a>
+				  											<span class="color-black hide">Sin Valoracion</span>
+				  											<span class="positive hide">Positiva</span>
+				  											<span class="neutral hide">Neutra</span>
+				  											<span class="negative hide">Negativa</span>
+				  										</td>
+				  										<td class="type-status">
+				  											<span class="color-neutral">Nueva</span>
+				  											<span class="color-positive hide">Completada</span>
+				  											<span class="color-negative hide">Cancelada</span>
+				  										</td>
+				  										<td class="text-right">
+				  											<div class="dropdown">
+		  														<a class="dropdown-toggle" type="button" id="dropdownDetails" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+															    	<i class="fa fa-cog fa-lg"></i>
+															    	<span class="caret"></span>
+		  														</a>
+		  														<ul class="dropdown-menu displayLeft" aria-labelledby="dropdownDetails">
+		    														<li>
+		    															<a data-toggle="modal" data-target="#purchaseDetail">
+		    																Ver detalle
+		    															</a>
+		    														</li>
+																    <li>
+																    	<a data-toggle="modal" data-target="#purchaseRate">
+																    		Valorar
+																    	</a>
+																    </li>
+																    <li><a href="#">Something else here</a></li>
+																    <li role="separator" class="divider"></li>
+																    <li><a href="#">Separated link</a></li>
+																  </ul>
+															</div>
+				  										</td>
+				  									</tr>
+				  									<tr>
+				  										<td>29/05/2016</td>
+				  										<td>
+				  											<a data-toggle="modal" data-target="#purchaseDetail">
+				  												#122654
+				  											</a>
+				  										</td>
+				  										<td>Nombre de Tienda</td>
+				  										<td class="payment-status">
+				  											<span class="color-positive">
+				  												Pagado
+				  												<br/> 
+				  												<small class="hide">(MercadoPago)</small>
+				  												<small>(Acordar con el vendedor)</small>
+				  											</span>
+				  											<span class="color-neutral hide">Pendiente</span>
+				  											<span class="color-negative hide">Cancelado</span>
+				  										</td>
+				  										<td class="shipping-status">
+				  											<span class="color-positive">Recibida</span>
+				  											<span class="color-negative hide">No Recibida</span>
+				  											<span class="color-neutral hide">En Espera</span>
+				  										</td>
+				  										<td>2</td>
+				  										<td>$870.00 ARS</td>
+				  										<td class="rate-status">
+															<a data-toggle="modal" data-target="#purchaseRate" class="hide">
+				  												<span class="color-neutral">Pendiente</span>
+				  											</a>
+				  											<span class="color-black hide">Sin Valoracion</span>
+				  											<span class="positive hide">Positiva</span>
+				  											<span class="neutral">Neutra</span>
+				  											<span class="negative hide">Negativa</span>
+				  										</td>
+				  										<td class="type-status">
+				  											<span class="color-neutral hide">Nueva</span>
+				  											<span class="color-positive">Completada</span>
+				  											<span class="color-negative hide">Cancelada</span>
+				  										</td>
+				  										<td class="text-right">
+				  											<div class="dropdown">
+		  														<a class="dropdown-toggle" type="button" id="dropdownDetails" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+															    	<i class="fa fa-cog fa-lg"></i>
+															    	<span class="caret"></span>
+		  														</a>
+		  														<ul class="dropdown-menu displayLeft" aria-labelledby="dropdownDetails">
+		    														<li>
+		    															<a data-toggle="modal" data-target="#purchaseDetail">
+		    																Ver detalle
+		    															</a>
+		    														</li>
+																    <li>
+																    	<a data-toggle="modal" data-target="#purchaseRate">
+																    		Valorar
+																    	</a>
+																    </li>
+																    <li><a href="#">Something else here</a></li>
+																    <li role="separator" class="divider"></li>
+																    <li><a href="#">Separated link</a></li>
+																  </ul>
+															</div>
+				  										</td>
+				  									</tr>
+				  									<tr>
+				  										<td>03/02/2016</td>
+				  										<td>
+				  											<a data-toggle="modal" data-target="#purchaseDetail">
+				  												#107512
+				  											</a>
+				  										</td>
+				  										<td>Strename</td>
+				  										<td class="payment-status">
+				  											<span class="color-positive hide">
+				  												Pagado
+				  												<br/> 
+				  												<small>(MercadoPago)</small>
+				  												<small class="hide">(Acordar con el vendedor)</small>
+				  											</span>
+				  											<span class="color-neutral">Pendiente</span>
+				  											<span class="color-negative hide">Cancelado</span>
+				  										</td>
+				  										<td class="shipping-status">
+				  											<span class="color-positive hide">Recibida</span>
+				  											<span class="color-negative hide">No Recibida</span>
+				  											<span class="color-neutral">En Espera</span>
+				  										</td>
+				  										<td>6</td>
+				  										<td>$2300.00 ARS</td>
+				  										<td class="rate-status">
+															<a data-toggle="modal" data-target="#purchaseRate" class="hide">
+				  												<span class="color-neutral">Pendiente</span>
+				  											</a>
+				  											<span class="color-black hide">Sin Valoracion</span>
+				  											<span class="positive hide">Positiva</span>
+				  											<span class="neutral hide">Neutra</span>
+				  											<span class="negative">Negativa</span>
+				  										</td>
+				  										<td class="type-status">
+				  											<span class="color-neutral">Nueva</span>
+				  											<span class="color-positive hide">Completada</span>
+				  											<span class="color-negative hide">Cancelada</span>
+				  										</td>
+				  										<td class="text-right">
+				  											<div class="dropdown">
+		  														<a class="dropdown-toggle" type="button" id="dropdownDetails" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+															    	<i class="fa fa-cog fa-lg"></i>
+															    	<span class="caret"></span>
+		  														</a>
+		  														<ul class="dropdown-menu displayLeft" aria-labelledby="dropdownDetails">
+		    														<li>
+		    															<a data-toggle="modal" data-target="#purchaseDetail">
+		    																Ver detalle
+		    															</a>
+		    														</li>
+																    <li>
+																    	<a data-toggle="modal" data-target="#purchaseRate">
+																    		Valorar
+																    	</a>
+																    </li>
+																    <li><a href="#">Something else here</a></li>
+																    <li role="separator" class="divider"></li>
+																    <li><a href="#">Separated link</a></li>
+																  </ul>
+															</div>
+				  										</td>
+				  									</tr>
+				  									<tr>
+				  										<td>01/10/2015</td>
+				  										<td>
+				  											<a data-toggle="modal" data-target="#purchaseDetail">
+				  												#108700
+				  											</a>
+				  										</td>
+				  										<td>Nombre de Tienda</td>
+				  										<td class="payment-status">
+				  											<span class="color-positive hide">
+				  												Pagado
+				  												<br/> 
+				  												<small>(MercadoPago)</small>
+				  												<small class="hide">(Acordar con el vendedor)</small>
+				  											</span>
+				  											<span class="color-neutral hide">Pendiente</span>
+				  											<span class="color-negative">Cancelado</span>
+				  										</td>
+				  										<td class="shipping-status">
+				  											<span class="color-positive hide">Recibida</span>
+				  											<span class="color-negative">No Recibida</span>
+				  											<span class="color-neutral hide">En Espera</span>
+				  										</td>
+				  										<td>4</td>
+				  										<td>$1900.00 ARS</td>
+				  										<td class="rate-status">
+															<a data-toggle="modal" data-target="#purchaseRate" class="hide">
+				  												<span class="color-neutral">Pendiente</span>
+				  											</a>
+				  											<span>Sin Valoracion</span>
+				  											<span class="positive hide">Positiva</span>
+				  											<span class="neutral hide">Neutra</span>
+				  											<span class="negative hide">Negativa</span>
+				  										</td>
+				  										<td class="type-status">
+				  											<span class="color-neutral hide">Nueva</span>
+				  											<span class="color-positive hide">Completada</span>
+				  											<span class="color-negative">Cancelada</span>
+				  										</td>
+				  										<td class="text-right">
+				  											<div class="dropdown">
+		  														<a class="dropdown-toggle" type="button" id="dropdownDetails" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+															    	<i class="fa fa-cog fa-lg"></i>
+															    	<span class="caret"></span>
+		  														</a>
+		  														<ul class="dropdown-menu displayLeft" aria-labelledby="dropdownDetails">
+		    														<li>
+		    															<a data-toggle="modal" data-target="#purchaseDetail">
+		    																Ver detalle
+		    															</a>
+		    														</li>
+																    <li>
+																    	<a data-toggle="modal" data-target="#purchaseRate">
+																    		Valorar
+																    	</a>
+																    </li>
+																    <li><a href="#">Something else here</a></li>
+																    <li role="separator" class="divider"></li>
+																    <li><a href="#">Separated link</a></li>
+																  </ul>
+															</div>
+				  										</td>
+				  									</tr>
+				  								</tbody>
+				  							</table>
+				  						</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- rating-->
+					<div class="user-rate hide">
+						<!-- show when empty -->
+						<div class="row text-center margin-bottom">
+							<div class="col-xs-12">
+								<span class="empty-content-msg">
+									No se encuentran Valoraciones.
+								</span>
+							</div>
+						</div>
+						<!-- feedback -->
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="box-rounded">
+									<div class="account-sales">
+									 	<div class="row">
+									 		<div class="col-xs-8">
+									 			<h4 class="uppercase">
+													Valoraciones 
+													<span class="badge badge-dot">05</span>
+												</h4>
+									 		</div>
+									 		<div class="col-xs-4 text-right">
+									 			<div class="rating-stars h4 color-positive">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+									 		</div>
+									 	</div>
+										<!-- Filters -->
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="table-filters">
+													<span class="filter-item-status">
+														<ul class="list-unstyled">
+													  		<li class="selected"><a href="#">Todas (12)</a></li>
+												      		<li><a href="#">Positivas (7)</a></li>
+												      		<li><a href="#">Neutrales (2)</a></li>
+												      		<li><a href="#">Negativas (3)</a></li>
+												    	</ul>
+												    </span>
+													<!-- orden -->
+													<span class="filter-publication-order">	
+														<button type="button" class="btn btn-default dropdown-toggle pull-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																Más Recientes
+																<span class="caret"></span>
+														</button>
+													    <ul class="dropdown-menu right">
+													      	<li><a href="#">Menos Recientes</a></li>
+													    </ul>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="feedback margin-top">
+											<!-- title date -->
+											<div class="title-center">
+												<span>Hoy</span>
+												<hr>
+											</div>
+											<!-- feedback box -->
+				  							<article class="arrow-box-container">
+					  							<div class="arrow-box">
+					  								<p>
+					  									<i class="fa fa-plus-circle fa-lg color-positive" aria-hidden="true"></i>
+					  									"Todo perfecto! Me contactaron inmediatamente e hicieron todo para facilitarme la entrega. Comprador recomendable!"
+					  								</p>
+					  							</div>
+					  							<div class="arrow-box-data small">
+													<p>
+														<a href="store.html">
+															<img class="round" src="../images/default/default-store.png" alt="Storename">
+															Storename
+														</a>
+													</p>
+													<p class="text-ellipsis">
+														<a href="product.html">
+															<img src="https://s3-us-west-2.amazonaws.com/mercadoni/live/undefined/big_palta.jpg" alt="user">
+															Palta Hass Elegida Hass Elegida Hass Elegida Hass Elegida
+														</a>
+													</p>
+												</div>
+				  							</article>
+				  							<!-- title date -->
+											<div class="title-center">
+												<span>Hace 3 meses</span>
+												<hr>
+											</div>
+				  							<!-- feedback box -->
+				  							<article class="arrow-box-container">
+					  							<div class="arrow-box">
+					  								<p>
+					  									<i class="fa fa-times-circle fa-lg color-negative" aria-hidden="true"></i>
+					  									"El comprador nunca respondio mis mensajes."
+					  								</p>
+					  							</div>
+					  							<div class="arrow-box-data small">
+													<p>
+														<a href="store.html">
+															<img class="round" src="../images/default/default-store.png" alt="Storename">
+															Storename
+														</a>
+													</p>
+													<p class="text-ellipsis">
+														<a href="product.html">
+															<img src="https://s3-us-west-2.amazonaws.com/mercadoni/live/undefined/big_palta.jpg" alt="user">
+															Palta Hass Elegida Hass Elegida Hass Elegida Hass Elegida
+														</a>
+													</p>
+												</div>
+				  							</article>
+				  							<!-- feedback box -->
+				  							<article class="arrow-box-container">
+					  							<div class="arrow-box">
+					  								<p>
+					  									<i class="fa fa-minus-circle fa-lg color-neutral" aria-hidden="true"></i>
+					  									"El usuario cancelo la compra."
+					  								</p>
+					  							</div>
+					  							<div class="arrow-box-data small">
+													<p>
+														<a href="store.html">
+															<img class="round" src="../images/default/default-store.png" alt="Storename">
+															Storename
+														</a>
+													</p>
+													<p class="text-ellipsis">
+														<a href="product.html">
+															<img src="https://s3-us-west-2.amazonaws.com/mercadoni/live/undefined/big_palta.jpg" alt="user">
+															Palta Hass Elegida
+														</a>
+													</p>
+												</div>
+				  							</article>
+			  							</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- addresses-->
+					<div class="user-address hide">
+						<!-- show when empty -->
+						<div class="row text-center margin-bottom">
+							<div class="col-xs-12">
+								<span class="empty-content-msg">
+									No se encuentran Direcciones.
+									<a data-toggle="modal" data-target="#userNewLocation">
+										Agregar
+									</a>
+								</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- Informacion de Cuenta -->
+								<div class="box-rounded">
+									<div class="account-info">
+										<h4 class="uppercase row">
+											Direcciones
+										</h4>
+										<div class="row form-group">
+											<div class="col-xs-8">
+												Libertador 602, CABA, 1001
+											</div>
+											<div class="col-xs-4 text-right">
+												<a data-toggle="modal" data-target="#userEditLocation">Editar</a>
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-xs-8">
+												Callao 1454, 6A, CABA, 1201
+											</div>
+											<div class="col-xs-4 text-right">
+												<a data-toggle="modal" data-target="#userEditLocation">Editar</a>
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-xs-12 text-center">
+												<a data-toggle="modal" data-target="#userNewLocation">
+													<i class="fa fa-plus-circle" aria-hidden="true"></i> 
+													Agregar direccion de entrega
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			
+					<!-- settings -->
+					<div class="user-settings hide">
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- Configuaracion de Mensajes -->
+								<div class="box-rounded">
+									<div class="account-info">
+										<h4 class="row">
+											<span class="uppercase">Mensajes</span> | Cuando hay cambios en tu orden
+										</h4>
+										<div class="row form-group">
+											<div class="col-xs-12">
+												<input type="checkbox"> 
+												Enviarme un mensaje de texto
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-xs-12">
+												<input type="checkbox"> 
+												Llamarme antes de la confirmacion de la compra (Solamente si hay modificaciones en la orden).
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>

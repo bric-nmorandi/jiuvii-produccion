@@ -1,0 +1,143 @@
+//
+// IMAGE LOADERS
+// --------------------------------------------------
+
+// LOADER CONTAINERS
+.image-loader-container {
+    width: @full-size;
+    display: block;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    min-height: @size-loader-container;
+    background-color: @white;
+
+    &:hover,
+    &:focus {
+        opacity: 1;
+    }
+}
+
+.image-loader-container:after {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.image-loader-container img {
+    display: block;
+    position: relative;
+    max-width: @full-size;
+    max-height: @size-loader-container;
+}
+
+
+//Home
+.image-loader-container.banner-carousel-loader-container {
+    min-height: @size-carousel;
+}
+.image-loader-container.banner-carousel-loader-container img {
+    max-height: @size-carousel;
+}
+
+.image-loader-container.cover-thumb-loader-container {
+    min-height: @size-cover;
+}
+.image-loader-container.cover-thumb-loader-container img {
+    max-height: @size-cover;
+}
+
+.image-loader-container.cover-jiuvii-loader-container {
+    min-height: @size-cover-jiuvii;
+}
+.image-loader-container.cover-jiuvii-loader-container img {
+    max-height: @size-cover-jiuvii;
+}
+
+.image-loader-container.image-loader-category,
+.image-loader-container.image-loader-subscribe {
+    min-height: @size-category;
+}
+.image-loader-container.image-loader-category img,
+.image-loader-container.image-loader-subscribe img {
+     max-height: @size-category;
+}
+
+
+// Product View
+.image-loader-container.image-loader-product {
+    min-height: @size-product;
+    width: 100%;
+
+    &:first-child {
+        min-height: @size-product-xl;
+    }
+}
+.image-loader-container.image-loader-product img {
+    max-height:@size-product;
+
+    &:first-child {
+        max-height: @size-product-xl;
+    }
+}
+
+// Product View Responsive
+/* Medium devices (desktops, 1024 and up) */
+@media (min-width: @screen-md-min) { 
+    .image-loader-container.image-loader-product {
+        min-height: @size-store-banner !important;
+
+        &:first-child {
+            min-height: @size-cover-jiuvii !important;
+        }
+    }
+
+    .image-loader-container.image-loader-product img {
+        max-height: @size-store-banner !important;
+
+        &:first-child {
+            max-height: @size-cover-jiuvii !important;
+        }
+    }
+}
+
+/* Large devices (large desktops, 1280px and up) */
+@media (min-width: @screen-lg-min) { 
+    .image-loader-container.image-loader-product {
+        min-height: @size-product !important;
+
+        &:first-child {
+            min-height: @size-product-xl !important;
+        }
+    }
+
+    .image-loader-container.image-loader-product img {
+        max-height: @size-product !important;
+
+        &:first-child {
+            max-height: @size-product-xl !important;
+        }
+    }
+}
+
+.image-loader-container.product-view-all-image-thumb {
+    min-height: @size-product-mini-thumb;
+    width: @full-size;
+}
+.image-loader-container.product-view-all-image-thumb img {
+    max-height: @size-product-mini-thumb;
+}
+
+// Store
+.image-loader-container.banner-store-loader-container {
+    min-height: @size-store-banner;
+    width: 100%
+}
+
+.image-loader-container.banner-store-loader-container img {
+    max-height: @size-store-banner;
+}
+

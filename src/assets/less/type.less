@@ -1,0 +1,193 @@
+//
+// Typography
+// --------------------------------------------------
+
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4, {
+  font-family: @headings-font-family;
+  font-weight: @headings-font-weight;
+  line-height: @headings-line-height;
+  color: @headings-color;
+
+  small,
+  .small
+  h5,
+  .h5
+  h6,
+  .h6
+   {
+    font-weight: normal;
+    line-height: 1.2;
+    color: @headings-small-color;
+  }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin-top: @line-height-computed;
+  margin-bottom: (@line-height-computed / 2);
+
+  small,
+  .small {
+    font-size: 65%;
+  }
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: (@line-height-computed / 2);
+  margin-bottom: (@line-height-computed / 2);
+
+  small,
+  .small {
+    font-size: 75%;
+  }
+}
+
+h1, .h1 { font-size: @font-size-h1; }
+h2, .h2 { font-size: @font-size-h2; }
+h3, .h3 { font-size: @font-size-h3; }
+h4, .h4 { font-size: @font-size-h4; }
+h5, .h5 { font-size: @font-size-h5; }
+h6, .h6 { font-size: @font-size-h6; }
+
+
+
+// Links
+a h1, a h2, a h3, a h4,
+h1 a, h2 a, h3 a, h4 a,
+a.h1, a.h2, a.h3, a.h4,
+a .h1, a .h2, a .h3, a .h4,
+.h1 a, .h2 a, .h3 a, .h4 a, {
+  color: @black;
+  text-decoration: @link-hover-decoration;
+
+  &:hover,
+  &:focus {
+    color: @color-text;
+    text-decoration: @link-hover-decoration;
+    outline: medium none;
+  }
+}
+
+
+
+// Body text
+// -------------------------
+
+p {
+  margin: 0 0 (@line-height-computed / 2);
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.thin {
+  font-weight: 200;
+}
+
+// Alignment
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-two-lines {
+    height: 3.5em;
+    line-height: 1.6em;
+    overflow: hidden;
+}
+
+// Transformation
+.line-through { text-decoration: line-through; }
+.uppercase { text-transform: uppercase; }
+
+// Contextual colors
+.color-gray { color: @gray; }
+.color-gray-dark { color: @gray-dark; }
+.color-gray-border { color: @gray-border; }
+.color-white { color: @white; }
+.color-black { color: @black; }
+.color-red { color: @red; }
+.color-primary { color: @primary; }
+.color-secondary { color: @secondary; }
+.color-text { color: @gray; }
+
+.color-facebook { color: @facebook; }
+.color-twitter { color: @twitter; }
+.color-google { color: @google; }
+.color-instagram { color: @instagram; }
+.color-pinterest { color: @pinterest; }
+
+
+.color-positive  { color: @success; }
+.color-negative  { color: @red; }
+.color-neutral  { color: @neutral; }
+
+.color-organic  { color: lighten(@primary, 10%); }
+.color-natural  { color: lighten(@primary, 20%); }
+
+
+// Page header
+// -------------------------
+
+.page-header {
+  margin: (@size-40 * 2) 0 @size-20;
+}
+
+.title-center {
+    width: 40%;
+    height: @size-20;
+    margin: (@size-15 * 2) auto;
+    text-align: center;
+
+    span {
+        background: @body-bg;
+        color: @color-text;
+        padding: 0 @size-60;
+    }
+
+    hr {
+        border-top: @default-border;
+        border-width: 1px 0 0;
+        margin-top: -@size-10;
+    }
+}
+
+// Page title
+// -------------------------
+.section-title {
+    color: @black;
+    font-size: @font-size-h3;
+    position: relative;
+    text-align: center;
+    clear: both;
+    padding: 0.5em (@size-15 * 2);
+    margin-bottom: @size-10;
+
+    span {
+        background: @body-bg;
+        display: inline-block;
+        line-height: 1;
+        padding: 0 @size-20;
+        position: relative;
+    }
+
+    &::before {
+        background: @black;
+        content: "";
+        display: block;
+        height: 1px;
+        left: 35%;
+        position: absolute;
+        top: 50%;
+        width: 30%;
+    }
+}

@@ -1,0 +1,60 @@
+//
+//  Login and register
+// --------------------------------------------------
+
+.page-bk {
+    background-attachment: fixed;
+    background-color: @white;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -2;
+    
+    &.login-bk {
+        background-image: url("../images/bk-login.jpg");
+    }
+
+    &.register-bk {
+        background-image: url("../images/bk-register.jpg");
+    }
+}
+
+.log-container {
+    background: @transparent-white;
+    margin: @navbar-jiuvii-height auto;
+    padding: @size-10 0 @size-20;
+    width: 45%;
+    border-radius: @default-border-radius;
+    
+    .logo {
+        background-image: url("../images/logo.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: block;
+        width: auto;
+        background-size: 100px auto;
+        height: 100px;
+        margin: @size-20 0 0;
+    }
+    
+    form {
+        max-width: 450px;
+        margin: 25px auto @size-20;
+
+        input {
+            width: @full-size;
+            border: @default-border;
+            display: block;
+            margin-bottom: @size-20;
+        }
+    }
+
+    hr {
+        border-color: @gray-border;
+    }
+}
